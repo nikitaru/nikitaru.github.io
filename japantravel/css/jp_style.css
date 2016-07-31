@@ -1,0 +1,126 @@
+@font-face{
+	font-family: f01;
+	src: url('../font/KozGoPr6N-Light_0.otf');
+}
+@font-face{
+	font-family: f02;
+	src: url('../font/impact.ttf');
+}
+*{
+	-webkit-border-size: border-box;
+	-moz-box-sizing: border-box;
+	overflow-x: hidden;　
+	overflow-y: auto;
+}
+/*---HEADER---*/
+header{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	font-size: 25px;
+	font-family: f02;
+	background-color: black;
+	color: white;
+	padding-left: 50px;
+	letter-spacing: 1px;
+}
+.title_bg{
+	height: 580px;
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+}
+.head_title{
+	overflow: hidden;
+	font-family: f02;
+	color: white;
+	font-size: 70px;
+	text-align: center;
+	width: 100%;
+	height: 580px;
+	line-height: 580px;
+	letter-spacing: 8px;
+}
+/*----第二個區塊---*/
+.box{
+	overflow: hidden;
+	margin-top: 40px;
+	width: 100%;
+	height: auto;
+}
+.pic{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+/*----第二個區塊---*/
+/*----底部----*/
+footer{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+	margin-top: 20px;
+	text-align: right;
+	padding-right: 30px;
+}
+/*----底部----*/
+/*一般標籤設定*/
+h2,h3,p{
+	text-align: center;
+	overflow: hidden;
+	font-family: f01;
+	letter-spacing: 1px;
+}
+h2{
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+}
+h3{
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	color: #202020;
+}
+p{
+	margin-top: 10px;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	color: #202020;
+}
+hr{
+	margin-top: 40px;
+}
+img{
+	overflow: hidden;
+	border: 3px solid black;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-family: f01;
+	font-size: 18px;
+}
+a:visted{
+	color: white;
+	text-decoration: none;
+	font-family: f01;
+	font-size: 18px;
+}
+a:hover{
+	color: grey;
+	text-decoration: none;
+	font-family: f01;
+	font-size: 18px;
+}
+a:active{
+	color: grey;
+	text-decoration: none;
+	font-family: f01;
+	font-size: 18px;
+}
