@@ -30,7 +30,7 @@
 }
 }
 /*ipad*/
-@media screen and (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 737px) and (max-width: 1199px){
 .col-md-1 {width: 8.33%;}
 .col-md-2 {width: 16.66%;}
 .col-md-3 {width: 25%;}
@@ -50,7 +50,7 @@
 }
 }
 /*iPhone*/
-@media screen and ( min-width: 320px ) and ( max-width:767px ){
+@media screen and ( min-width: 200px ) and ( max-width:736px ){
 .col-sm-1 {width: 8.33%;}
 .col-sm-2 {width: 16.66%;}
 .col-sm-3 {width: 25%;}
