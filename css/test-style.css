@@ -150,7 +150,6 @@ header {
 /*pic-box*/
 
 .picbox {
-    height: 560px;
     margin: 0 auto;
     text-align: center;
 }
@@ -178,14 +177,13 @@ header {
     padding: 120px 0 0 130px;
 }
 
-.t01,
-.t02 {
+.t01 {
     height: 75px;
     margin-bottom: 20px;
     line-height: 75px;
 }
 
-.t03 {
+.t02 {
     width: 65%;
     line-height: 37px;
 }
@@ -198,6 +196,42 @@ header {
 }
 
 
+/******SELL*****/
+
+.sell {
+    width: 100%;
+    float: left;
+    background-color: #B4ECE3;
+}
+
+.text-box02 {
+    color: #4E5151;
+    padding: 120px 0 0 150px;
+}
+
+.t03 {
+    line-height: 37px;
+}
+
+.iphone03 {
+    width: 280px;
+    margin: 0 auto;
+    float: left;
+    display: inline-block;
+}
+
+.iphone03 img {
+    width: 100%;
+}
+
+.hr03 {
+    display: inline-block;
+    width: 180px;
+    height: 5px;
+    background-color: #4E5151;
+}
+
+
 /******GET ORDER*****/
 
 .get-order {
@@ -206,7 +240,7 @@ header {
     background-color: #F5F5F5;
 }
 
-.text-box02 {
+.text-box03 {
     color: #5ACFD0;
     padding: 120px 0 0 130px;
 }
@@ -220,7 +254,46 @@ header {
 }
 
 
+/****** Manage Order ******/
+
+.manage-order {
+    width: 100%;
+    float: left;
+    background-color: #68E1D2;
+}
+
+.text-box04 {
+    color: #4B5354;
+    padding: 120px 0 0 130px;
+}
+
+.hr04 {
+    display: inline-block;
+    width: 180px;
+    height: 5px;
+    background-color: #4B5354;
+}
+
+
 /*--------RWD---------*/
+
+
+/*中 desktop*/
+
+@media screen and (min-width: 1367px) and (max-width: 1700px) {
+    /******sell******/
+    .text-box02 {
+        padding: 120px 30px 0 100px;
+    }
+    .t03 {
+        width: 85%;
+    }
+    /******manage******/
+    .text-box04 {
+        padding: 120px 30px 0 20px;
+    }
+}
+
 
 /* ipad 橫 */
 
@@ -246,6 +319,21 @@ header {
     .join_box {
         margin-top: 30px;
         text-align: center;
+    }
+    /******sell******/
+    .text-box02 {
+        padding: 120px 30px 0 20px;
+    }
+
+    .t03 {
+        width: 80%;
+    }
+    .iphone03 {
+        margin-left: 40px;
+    }
+    /******manage******/
+    .text-box04 {
+        padding: 120px 30px 0 20px;
     }
 }
 
@@ -286,16 +374,22 @@ header {
     /*****section******/
     .sec-container {
         width: 93%;
-        height: 1600px;
+        height: 1700px;
         margin: 0 auto;
         padding-top: 100px;
     }
-    /*voyager*/
+    /*voyager/get order*/
     .picbox {
         display: none;
     }
-    .text-box01 {
-        padding: 0 0 0 200px;
+    .text-box01,
+    .text-box02,
+    .text-box03,
+    .text-box04 {
+        padding: 0 0 0 220px;
+    }
+    .t03 {
+        width: 65%;
     }
     .picbox02 {
         display: inline-block;
@@ -304,7 +398,7 @@ header {
         margin-top: 80px;
     }
     .iphone02 {
-        width: 500px;
+        width: 550px;
         margin: 0 auto;
         text-align: center;
         display: inline-block;

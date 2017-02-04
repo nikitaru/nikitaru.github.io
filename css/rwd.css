@@ -10,7 +10,27 @@
 	margin-top: 3px;
 }
 /*´óÎžÄ»*/
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1601px){
+.col-mlg-1 {width: 8.33%;}
+.col-mlg-2 {width: 16.66%;}
+.col-mlg-3 {width: 25%;}
+.col-mlg-4 {width: 33.33%;}
+.col-mlg-5 {width: 41.66%;}
+.col-mlg-6 {width: 50%;}
+.col-mlg-7 {width: 58.33%;}
+.col-mlg-8 {width: 66.66%;}
+.col-mlg-9 {width: 75%;}
+.col-mlg-10 {width: 83.33%;}
+.col-mlg-11 {width: 91.66%;}
+.col-mlg-12 {width: 100%;}
+.row:after {
+ content: "";
+ clear: both;
+ display: block;
+}
+}
+/*ÖÐÎžÄ»*/
+@media screen and (min-width: 1367px) and (max-width: 1600px){
 .col-lg-1 {width: 8.33%;}
 .col-lg-2 {width: 16.66%;}
 .col-lg-3 {width: 25%;}
