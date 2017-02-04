@@ -1,0 +1,135 @@
+/* ----- 設定字型 ----- */
+
+@font-face {
+    font-family: F_LIGHT;
+    src: url("../fonts/NotoSansCJKtc-Light.otf");
+}
+
+@font-face {
+    font-family: F_REGULAR;
+    src: url("../fonts/NotoSansCJKtc-Medium.otf");
+}
+
+@font-face {
+    font-family: F_BOLD;
+    src: url("../fonts/NotoSansCJKtc-Regular.otf");
+}
+
+
+/* -----設定字型 END ----- */
+
+body {
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    background: url('../img/Body/body.jpg');
+    float: left;
+    margin-top: 100px;
+    background-image: url('../img/Body/body.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+.container {
+    width: 93%;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+.rt01 {
+    height: 100px;
+    font-size: 500%;
+    font-family: F_BOLD;
+    line-height: 100px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+}
+
+.h-title-color {
+    color: #19D7C7;
+}
+
+.rt02 {
+    height: 100px;
+    font-size: 500%;
+    font-family: F_BOLD;
+    line-height: 100px;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+
+.rp {
+    margin-top: 20px;
+    font-size: 200%;
+    font-family: F_LIGHT;
+    color: white;
+    padding: 0 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* ipad 橫 */
+
+@media screen and (min-width: 1025px) and (max-width:1366px) {
+    .rt01,
+    .rt02 {
+        font-size: 460%;
+    }
+    .rp {
+        font-size: 180%;
+        padding: 0 100px;
+        line-height: 45px;
+    }
+}
+
+
+/*ipad 直*/
+
+@media screen and (min-width: 737px) and (max-width:1024px) {
+    .rt01,
+    .rt02 {
+        padding: 0;
+        text-align: center;
+        font-size: 450%;
+    }
+    .rp {
+        font-size: 160%;
+        padding: 0 155px;
+        line-height: 45px;
+    }
+}
+
+
+/*iphone*/
+
+@media screen and (min-width: 300px) and (max-width:736px) {
+    .container {
+        height: 400px;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+    .rt01,
+    .rt02 {
+        font-size: 350%;
+        text-align: center;
+        padding: 0;
+    }
+    .rp {
+        font-size: 160%;
+        padding: 0 155px;
+        line-height: 45px;
+    }
+}
