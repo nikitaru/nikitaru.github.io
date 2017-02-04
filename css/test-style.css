@@ -1,4 +1,10 @@
+@charset="utf-8";
+
 /* ----- 設定字型 ----- */
+
+body {
+    font-size: 1em;
+}
 
 @font-face {
     font-family: F_LIGHT;
@@ -15,12 +21,23 @@
     src: url("../fonts/NotoSansCJKtc-Regular.otf");
 }
 
-
-/* -----設定字型 END ----- */
-
-body {
-    font-size: 1em;
+h3 {
+    font-size: 250%;
+    font-family: F_BOLD;
+    letter-spacing: 2px;
 }
+
+p {
+    font-size: 120%;
+    font-family: F_REGULAR;
+    letter-spacing: 5px;
+}
+
+
+/* ----- 設定字型 END ----- */
+
+
+/* ----- Header -----*/
 
 header {
     width: 100%;
@@ -39,11 +56,14 @@ header {
     text-align: center;
 }
 
+
+/*外框*/
+
 .container {
     width: 93%;
-    height: 800px;
+    height: 900px;
     margin: 0 auto;
-    padding-top: 250px;
+    padding-top: 320px;
 }
 
 .rt01 {
@@ -81,9 +101,133 @@ header {
 }
 
 
+/* join btn*/
+
+.join_box {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.join_box a {
+    display: inline-block;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    border: 2px solid #19D7C7;
+    border-radius: 2em;
+    text-decoration: none;
+    color: #19D7C7;
+    font-family: F_REGULAR;
+    font-size: 120%;
+    letter-spacing: 2px;
+}
+
+.join_box a:hover {
+    color: white;
+    background-color: #19D7C7;
+}
+
+
+/*------- SECTION ------*/
+
+
+/*****VOYAGER******/
+
+.voyager {
+    width: 100%;
+    float: left;
+    background-color: #616161;
+}
+
+.sec-container {
+    width: 93%;
+    height: 900px;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+
+/*pic-box*/
+
+.picbox {
+    height: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.iphone01 {
+    width: 280px;
+    margin: 0 auto;
+    float: right;
+    display: inline-block;
+}
+
+.iphone01 img {
+    width: 100%;
+}
+
+
+/*text-box*/
+
+.text-box01 {
+    color: white;
+    padding: 120px 0 0 130px;
+}
+
+.t01,
+.t02 {
+    height: 75px;
+    margin-bottom: 20px;
+    line-height: 75px;
+}
+
+.t03 {
+    width: 65%;
+    line-height: 37px;
+}
+
+.hr01 {
+    display: inline-block;
+    width: 180px;
+    height: 5px;
+    background-color: white;
+}
+
+
+/******GET ORDER*****/
+
+.get-order {
+    width: 100%;
+    float: left;
+    background-color: #F5F5F5;
+}
+
+.text-box02 {
+    color: #5ACFD0;
+    padding: 120px 0 0 130px;
+}
+.hr02{
+    display: inline-block;
+    width: 180px;
+    height: 5px;
+    background-color: #5ACFD0;
+    border: none;
+}
+
+/*--------RWD---------*/
+
+
 /* ipad 橫 */
 
 @media screen and (min-width: 1025px) and (max-width:1366px) {
+    /*****header******/
+    .container {
+        width: 93%;
+        height: 900px;
+        margin: 0 auto;
+        padding-top: 320px;
+    }
+    /*TITLE*/
     .rt01,
     .rt02 {
         font-size: 460%;
@@ -93,12 +237,25 @@ header {
         padding: 0 100px;
         line-height: 45px;
     }
+    /*button*/
+    .join_box {
+        margin-top: 30px;
+        text-align: center;
+    }
 }
 
 
 /*ipad 直*/
 
 @media screen and (min-width: 737px) and (max-width:1024px) {
+    /*****header******/
+    .container {
+        width: 93%;
+        height: 800px;
+        margin: 0 auto;
+        padding-top: 200px;
+    }
+    /*TITLE*/
     .rt01,
     .rt02 {
         padding: 0;
@@ -110,17 +267,25 @@ header {
         padding: 0 155px;
         line-height: 45px;
     }
+    /*button*/
+    .join_box {
+        margin-top: 30px;
+        text-align: center;
+    }
 }
 
 
 /*iphone*/
 
 @media screen and (min-width: 300px) and (max-width:736px) {
+    /*****header******/
     .container {
-        height: 400px;
+        width: 93%;
+        height: 800px;
         margin: 0 auto;
-        padding-top: 150px;
+        padding-top: 200px;
     }
+    /*TITLE*/
     .rt01,
     .rt02 {
         font-size: 350%;
@@ -131,5 +296,9 @@ header {
         font-size: 160%;
         padding: 0 155px;
         line-height: 45px;
+    }
+    /*button*/
+    .join_box {
+        margin-top: 20px;
     }
 }
