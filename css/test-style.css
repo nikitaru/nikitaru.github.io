@@ -49,6 +49,17 @@ p {
 /* ----- 設定字型 END ----- */
 
 
+/*------- NAV ------*/
+
+nav {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.nav-container{
+    width: 93%;
+}
+
 /* ----- Header -----*/
 
 header {
@@ -56,7 +67,6 @@ header {
     margin: auto;
     background: url('../img/Body/body.jpg');
     float: left;
-    margin-top: 100px;
     background-image: url('../img/Body/body.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -330,6 +340,10 @@ header {
     padding-top: 150px;
 }
 
+.jo-img-phone {
+    display: none;
+}
+
 .jo-img {
     width: 40px;
     height: 80px;
@@ -343,7 +357,6 @@ header {
 .jo-text {
     height: 80px;
     line-height: 80px;
-    padding-left: 50px;
 }
 
 .jo-text02 {
@@ -412,6 +425,28 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+
+
+/****** Footer ******/
+
+footer {
+    width: 100%;
+    float: left;
+    height: 150px;
+    background-color: black;
+}
+
+.f-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.f01,
+.f02,
+.f03 {
+    color: white;
+    border: 2px red solid;
 }
 
 
@@ -545,34 +580,9 @@ input[type=submit]:hover {
     .iphone02 img {
         width: 100%;
     }
-    /****** Join ******/
-    .jo-container {
-        padding-top: 55px;
-        height: 800px;
-    }
-    .jo-img {
-        position: relative;
-        width: 40px;
-        height: 80px;
-        padding-top: 28px;
-    }
-    .jo-img img {
-        position: absolute;
-        left: 50%;
-        margin-left: -40px;
-        width: 100%;
-    }
-    .jo-text {
-        padding: 0;
-        text-align: center;
-    }
-    .jo-text02 {
-        padding: 0;
-        font-size: 80%;
-        text-align: center;
-    }
-    .jo-text03 {
-        margin-top: 30px;
+    /*****footer******/
+    footer {
+        height: 220px;
     }
 }
 
@@ -611,28 +621,8 @@ input[type=submit]:hover {
     .text-box01 {
         padding: 120px 0 0 200px;
     }
-    /****** Join ******/
-    .jo-container {
-        height: 800px;
-    }
-    .jo-img {
-        width: 40px;
-        height: 80px;
-        padding-top: 28px;
-    }
-    .jo-img img {
-        width: 100%;
-    }
-    .jo-text {
-        padding: 0;
-        text-align: center;
-    }
-    .jo-text02 {
-        padding: 0;
-        font-size: 80%;
-        text-align: center;
-    }
-    .jo-text03 {
-        margin-top: 30px;
+    /*****footer******/
+    footer {
+        height: 200px;
     }
 }
