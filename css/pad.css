@@ -1,0 +1,134 @@
+    @charset="utf-8";
+    /*ipad 橫*/
+    
+    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /*nav*/
+        .menu {
+            margin-left: -470px;
+        }
+        .m-btn {
+            margin-left: 40px;
+            font-size: 90%;
+        }
+        .contact-btn {
+            font-size: 80%;
+        }
+        /*header*/
+        h3 {
+            font-size: 250%;
+        }
+        p {
+            font-size: 120%;
+        }
+        /*****header******/
+        .container {
+            width: 93%;
+            height: 800px;
+            margin: 0 auto;
+            padding-top: 200px;
+        }
+        /*TITLE*/
+        .rt01,
+        .rt02 {
+            padding: 0;
+            text-align: center;
+            font-size: 450%;
+        }
+        .rp {
+            font-size: 160%;
+            padding: 0 155px;
+            line-height: 45px;
+        }
+        /*button*/
+        .join_box {
+            margin-top: 30px;
+            text-align: center;
+        }
+        /*****section******/
+        .sec-container {
+            width: 93%;
+            height: 800px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .text-box02,
+        .text-box04 {
+            color: #4E5151;
+            padding: 120px 30px 0 20px;
+        }
+        .t03 {
+            width: 80%;
+        }
+        /*****footer******/
+        footer {
+            height: 220px;
+        }
+    }
+    /*ipad 直*/
+    
+    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /*nav*/
+        .menu {
+            display: none;
+        }
+        /*****header******/
+        .container {
+            width: 93%;
+            height: 900px;
+            margin: 0 auto;
+            padding-top: 320px;
+        }
+        /*TITLE*/
+        .rt01,
+        .rt02 {
+            padding: 0;
+            text-align: center;
+            font-size: 450%;
+        }
+        .rp {
+            font-size: 180%;
+            padding: 0 100px;
+            line-height: 45px;
+        }
+        /*button*/
+        .join_box {
+            margin-top: 30px;
+            text-align: center;
+        }
+        /******voyager******/
+        .sec-container {
+            width: 93%;
+            height: 1700px;
+            margin: 0 auto;
+            padding-top: 130px;
+        }
+        .picbox {
+            display: none;
+        }
+        .text-box01 {
+            padding: 0 0 0 200px;
+        }
+        .text-box02,
+        .text-box03,
+        .text-box04 {
+            padding: 0 0 0 200px;
+        }
+        .t03 {
+            width: 65%;
+        }
+        .picbox02 {
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .iphone02 {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            display: inline-block;
+        }
+        .iphone02 img {
+            width: 100%;
+        }
+    }

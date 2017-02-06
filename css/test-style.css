@@ -49,16 +49,100 @@ p {
 /* ----- 設定字型 END ----- */
 
 
-/*------- NAV ------*/
+/* ----- NAV -----*/
 
 nav {
     width: 100%;
     height: 100px;
-    float: left;
 }
-.nav-container{
+
+.nav-container {
+    position: relative;
     width: 93%;
+    height: 100px;
+    margin: 0 auto;
 }
+
+.nav-container:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 160px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+/*menu*/
+
+.menu {
+    width: 900px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    padding-top: 20px;
+    margin-left: -500px;
+}
+
+.m-btn {
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 110%;
+    font-family: F_BOLD;
+    text-decoration: none;
+}
+
+.m-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    border-bottom: 3px solid #19D7C7;
+}
+
+
+/*contact*/
+
+.contact {
+    position: absolute;
+    right: 3%;
+    display: inline-block;
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contact-btn {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-family: F_BOLD;
+    font-size: 100%;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 
 /* ----- Header -----*/
 
@@ -286,7 +370,7 @@ header {
 
 .text-box04 {
     color: #4B5354;
-    padding: 120px 0 0 130px;
+    padding: 120px 0 0 150px;
 }
 
 .hr04 {
@@ -376,7 +460,9 @@ header {
     padding: 0 150px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=tel],
+input[type=email] {
     width: 100%;
     height: 50px;
     padding: 12px 20px;
@@ -442,187 +528,106 @@ footer {
     margin: 0 auto;
 }
 
-.f01,
-.f02,
-.f03 {
-    color: white;
-    border: 2px red solid;
+.f-imgbox {
+    width: 100px;
+    height: 150px;
+    position: relative;
 }
 
+.f-imgbox img {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 53%;
+    transform: translate(30%, -50%);
+}
 
-/*--------RWD---------*/
+.f01,
+.f02 {
+    font-size: 90%;
+    font-family: F_LIGHT;
+    letter-spacing: 1px;
+    color: white;
+    height: 150px;
+    line-height: 150px;
+}
+
+.f03 {
+    height: 150px;
+    position: relative;
+}
+
+.f03 ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.f03 .img01 {
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    right: 60%;
+    display: inline-block;
+    transform: translate(0%, -50%);
+}
+
+.f03 .img01:hover {
+    opacity: 0.7;
+}
+
+.f03 .img02 {
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    right: 50%;
+    display: inline-block;
+    transform: translate(0%, -50%);
+}
+
+.f03 .img02:hover {
+    opacity: 0.7;
+}
+
+.f-contact-btn {
+    text-decoration: none;
+    color: white;
+    font-family: F_LIGHT;
+    font-size: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    height: 40px;
+    line-height: 35px;
+    width: 170px;
+    border: 2px white solid;
+    border-radius: 25px;
+}
+
+.f-contact-btn:hover,
+.f-contact-btn:active {
+    background-color: white;
+    border: none;
+    line-height: 40px;
+    font-family: F_REGULAR;
+    color: black;
+}
 
 
 /*中 desktop*/
 
-@media screen and (min-width: 1367px) and (max-width: 1700px) {
+@media screen and (min-width: 1224px) and (max-width: 1823px){
     /******sell******/
     .text-box02 {
-        padding: 120px 30px 0 100px;
+        padding: 120px 30px 0 80px;
     }
     .t03 {
         width: 85%;
     }
     /******manage******/
     .text-box04 {
-        padding: 120px 30px 0 20px;
-    }
-}
-
-
-/* ipad 橫 */
-
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-    /*****header******/
-    .container {
-        width: 93%;
-        height: 900px;
-        margin: 0 auto;
-        padding-top: 320px;
-    }
-    /*TITLE*/
-    .rt01,
-    .rt02 {
-        font-size: 460%;
-    }
-    .rp {
-        font-size: 180%;
-        padding: 0 100px;
-        line-height: 45px;
-    }
-    /*button*/
-    .join_box {
-        margin-top: 30px;
-        text-align: center;
-    }
-    /******sell******/
-    .text-box02 {
-        padding: 120px 30px 0 20px;
-    }
-    .t03 {
-        width: 80%;
-    }
-    .iphone03 {
-        margin-left: 40px;
-    }
-    /******manage******/
-    .text-box04 {
-        padding: 120px 30px 0 20px;
-    }
-}
-
-
-/*ipad 直*/
-
-@media screen and (min-width: 737px) and (max-width:1024px) {
-    h3 {
-        font-size: 350%;
-    }
-    p {
-        font-size: 150%;
-    }
-    /*****header******/
-    .container {
-        width: 93%;
-        height: 800px;
-        margin: 0 auto;
-        padding-top: 200px;
-    }
-    /*TITLE*/
-    .rt01,
-    .rt02 {
-        padding: 0;
-        text-align: center;
-        font-size: 450%;
-    }
-    .rp {
-        font-size: 160%;
-        padding: 0 155px;
-        line-height: 45px;
-    }
-    /*button*/
-    .join_box {
-        margin-top: 30px;
-        text-align: center;
-    }
-    /*****section******/
-    .sec-container {
-        width: 93%;
-        height: 1700px;
-        margin: 0 auto;
-        padding-top: 100px;
-    }
-    /*voyager/get order*/
-    .picbox {
-        display: none;
-    }
-    .text-box01,
-    .text-box02,
-    .text-box03,
-    .text-box04 {
-        padding: 0 0 0 220px;
-    }
-    .t03 {
-        width: 65%;
-    }
-    .picbox02 {
-        display: inline-block;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 80px;
-    }
-    .iphone02 {
-        width: 550px;
-        margin: 0 auto;
-        text-align: center;
-        display: inline-block;
-    }
-    .iphone02 img {
-        width: 100%;
-    }
-    /*****footer******/
-    footer {
-        height: 220px;
-    }
-}
-
-
-/*iphone*/
-
-@media screen and (min-width: 300px) and (max-width:736px) {
-    /*****header******/
-    .container {
-        width: 93%;
-        height: 800px;
-        margin: 0 auto;
-        padding-top: 200px;
-    }
-    /*TITLE*/
-    .rt01,
-    .rt02 {
-        font-size: 350%;
-        text-align: center;
-        padding: 0;
-    }
-    .rp {
-        font-size: 160%;
-        padding: 0 155px;
-        line-height: 45px;
-    }
-    /*button*/
-    .join_box {
-        margin-top: 20px;
-    }
-    /*****section******/
-    /*voyager*/
-    .picbox {
-        display: none;
-    }
-    .text-box01 {
-        padding: 120px 0 0 200px;
-    }
-    /*****footer******/
-    footer {
-        height: 200px;
+        padding: 120px 30px 0 80px;
     }
 }
