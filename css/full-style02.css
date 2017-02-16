@@ -1470,7 +1470,7 @@ footer {
     }
     .jo-t02 {
         margin-bottom: 40px;
-        font-size: 40%;
+        font-size: 80%;
     }
     input[type=text],
     input[type=tel],
@@ -1678,7 +1678,7 @@ footer {
     }
     .jo-t02 {
         margin-bottom: 40px;
-        font-size: 40%;
+        font-size: 80%;
     }
     /*mail img*/
     .mail-pic02 {
@@ -1873,7 +1873,7 @@ footer {
     }
     .jo-t02 {
         margin-bottom: 40px;
-        font-size: 10%;
+        font-size: 80%;
         letter-spacing: 2px;
     }
     /* jo-right*/
@@ -1893,7 +1893,7 @@ footer {
     input[type=email] {
         width: 240px;
         height: 45px;
-        font-size: 20%;
+        font-size: 80%;
     }
     input[type=submit] {
         width: 120px;
@@ -1918,7 +1918,7 @@ footer {
     }
     .fo-t01,
     .fo-t02 {
-        font-size: 20%;
+        font-size: 80%;
         letter-spacing: 1.3px;
         margin: 0 0 10px 0;
     }
