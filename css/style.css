@@ -1098,8 +1098,9 @@ input[type=submit] {
     font-family: F_LIGHT;
     width: 150px;
     height: 40px;
+    line-height: 20px;
     color: white;
-    padding: 0 0 0 13px;
+    text-align: center;
     background-color: black;
     border-radius: 30px;
     font-size: 50%;
@@ -1822,23 +1823,28 @@ footer {
         font-size: 40px;
     }
     .phone-btn a {
-        padding: 17px 0;
-        font-size: 95%;
+        padding: 10px 0;
+        font-size: 100%;
     }
     .phone-hr {
-        width: 120px;
-        margin-top: 20px;
+        width: 180px;
+        margin-top: 0px;
+    }
+    .phone-hr hr{
+        width: 180px;
     }
     .phone-so-container,
     .phone-so-icon {
-        width: 120px;
-        padding-top: 5px;
+        width: 180px;
+        padding-top: 10px;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
     }
     .p-mail-icon,
     .p-ig-icon,
     .p-fb-icon {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         padding-top: 4px;
         border-radius: 100px;
     }
@@ -2039,7 +2045,7 @@ footer {
     input[type=text],
     input[type=tel],
     input[type=email] {
-        width: 240px;
+        width: 300px;
         height: 45px;
         font-size: 45%;
         margin: 10px 0;
@@ -2123,22 +2129,25 @@ footer {
     }
     .phone-btn a {
         padding: 10px 0;
-        font-size: 85%;
+        font-size: 100%;
     }
     .phone-hr {
-        width: 120px;
+        width: 180px;
         margin-top: 20px;
+    }
+    .phone-hr hr{
+        width: 180px;
     }
     .phone-so-container,
     .phone-so-icon {
-        width: 120px;
-        padding-top: 5px;
+        width: 180px;
+        padding-top: 10px;
     }
     .p-mail-icon,
     .p-ig-icon,
     .p-fb-icon {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         padding-top: 4px;
         border-radius: 100px;
     }
@@ -2416,20 +2425,23 @@ footer {
         font-size: 100%;
     }
     .phone-hr {
-        width: 120px;
+        width: 180px;
         margin-top: 20px;
+    }
+    .phone-hr hr {
+        width: 180px;
     }
     .phone-so-container,
     .phone-so-icon {
-        width: 120px;
-        padding-top: 5px;
+        width: 180px;
+        padding-top: 10px;
     }
     .p-mail-icon,
     .p-ig-icon,
     .p-fb-icon {
-        width: 30px;
-        height: 30px;
-        padding-top: 3px;
+        width: 40px;
+        height: 40px;
+        padding-top: 4px;
         border-radius: 100px;
     }
     /* contact btn */
