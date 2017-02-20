@@ -1066,6 +1066,8 @@ input[type=email] {
     font-family: F_LIGHT;
     transition: 0.3s linear;
     -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
 }
 
 ::-webkit-input-placeholder {
@@ -2440,7 +2442,7 @@ footer {
     }
     .phone-btn a {
         padding: 10px 0;
-        font-size: 80%;
+        font-size: 100%;
     }
     .phone-hr {
         width: 120px;
@@ -2456,7 +2458,7 @@ footer {
     .p-fb-icon {
         width: 30px;
         height: 30px;
-        padding-top: 4px;
+        padding-top: 3px;
         border-radius: 100px;
     }
     /* contact btn */
@@ -2669,7 +2671,7 @@ footer {
     input[type=text],
     input[type=tel],
     input[type=email] {
-        width: 240px;
+        width: 300px;
         height: 45px;
         font-size: 40%;
         margin-bottom: 0px;
