@@ -64,7 +64,7 @@ p {
 
 /* The navigation bar */
 
-nav {
+.main-nav {
     width: 100%;
     background-color: #f5f5f5;
     position: fixed;
@@ -227,6 +227,8 @@ nav {
 .fb-icon {
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
 }
 
 .mail-icon:hover,
@@ -254,6 +256,8 @@ nav {
     color: white;
     background-color: black;
     transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
 }
 
@@ -271,6 +275,233 @@ nav {
 
 
 /*moblie nav*/
+
+.menu-trigger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 100%;
+    z-index: 50;
+    position: absolute;
+    right: 55px;
+    top: 12px;
+}
+
+.menu-trigger img {
+    width: 100%;
+}
+
+.menu-tri-pic02 {
+    display: none;
+}
+
+
+/* overlay menu*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+.overlay-content {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+}
+
+.phone-menu {
+    width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.phone-btn a {
+    font-family: F_LIGHT;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 110%;
+    color: #f5f5f5;
+    display: block;
+    transition: 0.3s ease;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.phone-btn a:hover,
+.phone-btn a:focus {
+    color: #19d7c7;
+    border-bottom: #19d7c7 2px solid;
+}
+
+.closebtn {
+    color: #818181;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 59px;
+    font-size: 40px;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #19d7c7;
+}
+
+.phone-en-ch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.phone-en-btn {
+    margin-right: 20px;
+}
+
+.en-ch-wall {
+    font-size: 28px;
+    color: #f5f5f5;
+}
+
+.phone-hr {
+    width: 152px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-hr hr {
+    width: 152px;
+    height: 1.5px;
+    background-color: #f5f5f5;
+    border: none;
+}
+
+
+/*////phone social icon////*/
+
+.phone-so-container,
+.phone-so-icon {
+    width: 150px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.p-mail-icon,
+.p-ig-icon,
+.p-fb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    text-align: center;
+    border: #f5f5f5 2px solid;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.p-mail-icon:hover,
+.p-mail-icon:focus,
+.p-ig-icon:hover,
+.p-ig-icon:focus,
+.p-fb-icon:hover,
+.p-fb-icon:focus {
+    border: #19d7c7 2px dashed;
+}
+
+.p-mail-icon img {
+    width: 50%;
+}
+
+.p-ig-icon img {
+    width: 50%
+}
+
+.p-fb-icon img {
+    width: 50%;
+}
+
+.p-m02,
+.p-ig02,
+.p-fb02 {
+    display: none;
+}
+
+
+/*phone btn hover effect*/
+
+
+/*mail*/
+
+.p-mail-icon:hover .p-m01 {
+    display: none;
+}
+
+.p-mail-icon:hover .p-m02 {
+    display: inline-block;
+}
+
+
+/*ig*/
+
+.p-ig-icon:hover .p-ig01 {
+    display: none;
+}
+
+.p-ig-icon:hover .p-ig02 {
+    display: inline-block;
+}
+
+
+/*fb*/
+
+.p-fb-icon:hover .p-fb01 {
+    display: none;
+}
+
+.p-fb-icon:hover .p-fb02 {
+    display: inline-block;
+}
 
 
 /* ----- Header -----*/
@@ -1299,21 +1530,50 @@ footer {
     .menu {
         display: none;
     }
+    .menu-trigger {
+        display: inline-block;
+        font-size: 30px;
+        width: 25px;
+        right: 20px;
+        top: 10px;
+    }
+    /*menu trigger hover effect*/
+    .menu-trigger:hover .menu-tri-pic01 {
+        display: none;
+    }
+    .menu-trigger:hover .menu-tri-pic02 {
+        display: inline-block;
+    }
+    /* phone menu style*/
+    .closebtn {
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+    }
+    .phone-btn a {
+        padding: 20px 0;
+        font-size: 120%;
+    }
+    .phone-hr {
+        width: 150px;
+        margin-top: 20px;
+    }
+    .phone-so-container,
+    .phone-so-icon {
+        width: 150px;
+        padding-top: 20px;
+    }
+    .p-mail-icon,
+    .p-ig-icon,
+    .p-fb-icon {
+        width: 40px;
+        height: 40px;
+        padding-top: 4px;
+        border-radius: 100px;
+    }
     /* contact btn */
     .nav-contact-container {
         display: none;
-    }
-    /*moblie line*/
-    .ham-line {
-        display: block;
-    }
-    .overlay-content a {
-        margin-bottom: 30px;
-        font-size: 170%;
-    }
-    .overlay .closebtn {
-        top: 15px;
-        right: 35px;
     }
     /*--- HEADER ---*/
     .row01 {
@@ -1554,21 +1814,50 @@ footer {
     .menu {
         display: none;
     }
+    .menu-trigger {
+        display: inline-block;
+        font-size: 30px;
+        width: 25px;
+        right: 20px;
+        top: 10px;
+    }
+    /*menu trigger hover effect*/
+    .menu-trigger:hover .menu-tri-pic01 {
+        display: none;
+    }
+    .menu-trigger:hover .menu-tri-pic02 {
+        display: inline-block;
+    }
+    /* phone menu style*/
+    .closebtn {
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+    }
+    .phone-btn a {
+        padding: 17px 0;
+        font-size: 95%;
+    }
+    .phone-hr {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .phone-so-container,
+    .phone-so-icon {
+        width: 120px;
+        padding-top: 5px;
+    }
+    .p-mail-icon,
+    .p-ig-icon,
+    .p-fb-icon {
+        width: 30px;
+        height: 30px;
+        padding-top: 4px;
+        border-radius: 100px;
+    }
     /* contact btn */
     .nav-contact-container {
         display: none;
-    }
-    /*moblie line*/
-    .ham-line {
-        display: block;
-    }
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
     /*--- HEADER ---*/
     .row01 {
@@ -1832,21 +2121,50 @@ footer {
     .menu {
         display: none;
     }
+    .menu-trigger {
+        display: inline-block;
+        font-size: 30px;
+        width: 25px;
+        right: 15px;
+        top: 10px;
+    }
+    /*menu trigger hover effect*/
+    .menu-trigger:hover .menu-tri-pic01 {
+        display: none;
+    }
+    .menu-trigger:hover .menu-tri-pic02 {
+        display: inline-block;
+    }
+    /* phone menu style*/
+    .closebtn {
+        top: 10px;
+        right: 20px;
+        font-size: 35px;
+    }
+    .phone-btn a {
+        padding: 10px 0;
+        font-size: 85%;
+    }
+    .phone-hr {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .phone-so-container,
+    .phone-so-icon {
+        width: 120px;
+        padding-top: 5px;
+    }
+    .p-mail-icon,
+    .p-ig-icon,
+    .p-fb-icon {
+        width: 30px;
+        height: 30px;
+        padding-top: 4px;
+        border-radius: 100px;
+    }
     /* contact btn */
     .nav-contact-container {
         display: none;
-    }
-    /*moblie line*/
-    .ham-line {
-        display: block;
-    }
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
     /*--- HEADER ---*/
     .row01 {
@@ -2100,21 +2418,50 @@ footer {
     .menu {
         display: none;
     }
+    .menu-trigger {
+        display: inline-block;
+        font-size: 30px;
+        width: 25px;
+        right: 15px;
+        top: 10px;
+    }
+    /*menu trigger hover effect*/
+    .menu-trigger:hover .menu-tri-pic01 {
+        display: none;
+    }
+    .menu-trigger:hover .menu-tri-pic02 {
+        display: inline-block;
+    }
+    /* phone menu style*/
+    .closebtn {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+    .phone-btn a {
+        padding: 10px 0;
+        font-size: 80%;
+    }
+    .phone-hr {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .phone-so-container,
+    .phone-so-icon {
+        width: 120px;
+        padding-top: 5px;
+    }
+    .p-mail-icon,
+    .p-ig-icon,
+    .p-fb-icon {
+        width: 30px;
+        height: 30px;
+        padding-top: 4px;
+        border-radius: 100px;
+    }
     /* contact btn */
     .nav-contact-container {
         display: none;
-    }
-    /*moblie line*/
-    .ham-line {
-        display: block;
-    }
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
     /*--- HEADER ---*/
     .row01 {

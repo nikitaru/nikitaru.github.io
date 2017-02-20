@@ -7,22 +7,12 @@
     <title>Levooya</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-
-    }
-
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-    }
-    </script>
 </head>
 
 <body>
     <!-- NAV -->
     <!-- Navigation -->
-    <nav>
+    <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
                 <a href="index.html"><img src="img/Nav_Desktop/Levooya_bk.png" alt="logo"></a>
@@ -48,21 +38,65 @@
                 </ul>
                 <a href="#" class="nav-contact">與我們聯絡</a>
             </div>
+            <span class="menu-trigger" onclick="openNav()">
+                <img src="img/Nav_phone/hamburger.png" class="menu-tri-pic01" alt="menu-mobile">
+                <img src="img/Nav_phone/hamburger_hover.png" class="menu-tri-pic02" alt="menu-mobile">
+            </span>
+        </div>
+    </nav>
+    <nav id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav() ">&times;</a>
+        <div class="overlay-content">
+            <ul class="phone-menu">
+                <li class="phone-btn"><a href="#">關於我們</a></li>
+                <li class="phone-btn"><a href="#">成為旅行者</a></li>
+                <li class="phone-btn"><a href="#">部落格</a></li>
+                <li class="phone-btn"><a href="#">幫助中心</a></li>
+                <li class="phone-btn phone-en-ch">
+                    <a href="#" class="phone-en-btn">EN</a>
+                    <a href="#">中文</a>
+                </li>
+            </ul>
+            <div class="phone-hr">
+                <hr>
+            </div>
+            <div class="phone-so-container">
+                <ul class="phone-so-icon">
+                    <li class="p-mail-icon">
+                        <a href="#">
+                            <img src="img/Nav_phone/mail_logo_white.png" class="p-m01" alt="mail">
+                            <img src="img/Nav_phone/mail_logo_hover.png" class="p-m02" alt="ig">
+                        </a>
+                    </li>
+                    <li class="p-ig-icon">
+                        <a href="#">
+                            <img src="img/Nav_phone/ig_logo_white.png" class="p-ig01" alt="ig">
+                            <img src="img/Nav_phone/ig_logo_hover.png" class="p-ig02" alt="ig">
+                        </a>
+                    </li>
+                    <li class="p-fb-icon">
+                        <a href="#">
+                            <img src="img/Nav_phone/fb_logo_white.png" class="p-fb01" alt="fb">
+                            <img src="img/Nav_phone/fb_logo_hover.png" class="p-fb02" alt="fb">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!--  Header -->
     <header>
         <div class="h-container">
             <div class="row01">
-                <div class="h-t01 ">
-                    The <span class="h-title-color ">Seller Page</span>
+                <div class="h-t01">
+                    The <span class="h-title-color">Seller Page</span>
                 </div>
-                <div class="h-t02 ">
+                <div class="h-t02">
                     Title Goes Here
                 </div>
             </div>
-            <div class="row02 ">
-                <span class="p-t01 ">
+            <div class="row02">
+                <span class="p-t01">
                     You can build anything&nbsp;,&nbsp;
                 </span>
                 <span class="p-t02 ">
@@ -109,30 +143,30 @@
     </div>
 </section>
 <!-- Sell -->
-<section class="sell">
-    <div class="sec-container">
-        <div class="text-box02 sell-t-color">
+<section class="sell ">
+    <div class="sec-container ">
+        <div class="text-box02 sell-t-color ">
             <div class="t-01 ">
                 <h3>發表想法開始販售</h3>
             </div>
-            <div class="t-01">
-                <hr class="hr02">
+            <div class="t-01 ">
+                <hr class="hr02 ">
             </div>
-            <div class="t-02">
-                <p class="p-flex">
+            <div class="t-02 ">
+                <p class="p-flex ">
                     <span>經營自己的品牌，</span>
-                    <span class="p-flex-small">
+                    <span class="p-flex-small ">
                             <span>用文字秀品味，</span>
                     <span>你就是品牌的最佳代言人&nbsp;!</span>
                     </span>
                 </p>
             </div>
         </div>
-        <div class="pic-iphone01">
-            <img src="img/Body/Section1.png" alt="iphone02 ">
+        <div class="pic-iphone01 ">
+            <img src="img/Body/Section1.png " alt="iphone02 ">
         </div>
-        <div class="pic-iphone02">
-            <img src="img/Body/Section1.png" alt="iphone02 ">
+        <div class="pic-iphone02 ">
+            <img src="img/Body/Section1.png " alt="iphone02 ">
         </div>
     </div>
 </section>
@@ -159,7 +193,7 @@
                 </p>
             </div>
         </div>
-        <div class="pic-iphone02">
+        <div class="pic-iphone02 ">
             <img src="img/Body/Section2.png " alt="iphone02 ">
         </div>
     </div>
@@ -193,44 +227,44 @@
     </div>
 </section>
 <!-- Slogan -->
-<section class="slogan">
-    <div class="slo-container">
-        <div class="slo-up">
-            <div class="slo-title">漫遊世界賺取旅費</div>
-            <div class="slo-pic">
-                <img src="img/Body/Plane.png" alt="Plane">
+<section class="slogan ">
+    <div class="slo-container ">
+        <div class="slo-up ">
+            <div class="slo-title ">漫遊世界賺取旅費</div>
+            <div class="slo-pic ">
+                <img src="img/Body/Plane.png " alt="Plane ">
             </div>
         </div>
-        <div class="slo-down">成為Levooya的特約旅行者賣家</div>
+        <div class="slo-down ">成為Levooya的特約旅行者賣家</div>
     </div>
 </section>
 <!-- Join -->
 <section class="join ">
-    <div class="jo-container">
-        <div class="jo-left">
-            <img src="img/Body/mail.png" alt="mailimg" class="mail-pic01 ">
-            <div class="jo-title">
-                <div class="jo-t01">
-                    <img src="img/Body/mail.png" alt="mailimg" class="mail-pic02"> 我想成為賣家
+    <div class="jo-container ">
+        <div class="jo-left ">
+            <img src="img/Body/mail.png " alt="mailimg " class="mail-pic01 ">
+            <div class="jo-title ">
+                <div class="jo-t01 ">
+                    <img src="img/Body/mail.png " alt="mailimg " class="mail-pic02 "> 我想成為賣家
                 </div>
-                <div class="jo-t02">請留下資料，我們收到後將立即與您聯繫</div>
+                <div class="jo-t02 ">請留下資料，我們收到後將立即與您聯繫</div>
             </div>
         </div>
-        <div class="jo-right">
-            <div class="jo-t03">聯絡資訊</div>
-            <div class="join-form">
-                <form action="#">
-                    <div class="row">
-                        <input type="text" id="fname" name="firstname " placeholder="您的稱呼 ">
+        <div class="jo-right ">
+            <div class="jo-t03 ">聯絡資訊</div>
+            <div class="join-form ">
+                <form action="# ">
+                    <div class="row ">
+                        <input type="text " id="fname " name="firstname " placeholder="您的稱呼 ">
                     </div>
-                    <div class="row">
-                        <input type="tel" id="telnumber" name="phone " placeholder="您的電話 ">
+                    <div class="row ">
+                        <input type="tel " id="telnumber " name="phone " placeholder="您的電話 ">
                     </div>
-                    <div class="row">
-                        <input type="email" id="email" name="email " placeholder="您的信箱 ">
+                    <div class="row ">
+                        <input type="email " id="email " name="email " placeholder="您的信箱 ">
                     </div>
-                    <div class="row">
-                        <input type="submit" value="送出 ">
+                    <div class="row ">
+                        <input type="submit " value="送出 ">
                     </div>
                 </form>
             </div>
@@ -241,29 +275,38 @@
     <div class="fo-container ">
         <div class="fo-left ">
             <div class="fo-logo ">
-                <img src="img/Footer/Levooya_fbk.png" alt="levooyalogo">
+                <img src="img/Footer/Levooya_fbk.png " alt="levooyalogo ">
             </div>
-            <div class="fo-t01">Copyright2017&nbsp;©&nbsp;www.levooya.com</div>
-            <div class="fo-t02">Privacy Policy . Terms Of Use</div>
+            <div class="fo-t01 ">Copyright2017&nbsp;©&nbsp;www.levooya.com</div>
+            <div class="fo-t02 ">Privacy Policy . Terms Of Use</div>
         </div>
-        <div class="fo-right">
-            <div class="fo-so">
+        <div class="fo-right ">
+            <div class="fo-so ">
                 <ul class="so-icon ">
                     <li class="ig-a ">
-                        <a href="# "><img class="ig-w" src="img/Footer/ig_logo_white.png " alt=" ">
+                        <a href="# "><img class="ig-w " src="img/Footer/ig_logo_white.png " alt=" ">
                             <img class="ig-ac " src="img/Footer/ig_logo_active.png " alt=" ">
                         </a>
                     </li>
                     <li class="fb-a ">
-                        <a href="# "><img class="fb-w" src="img/Footer/fb_logo_white.png " alt=" ">
+                        <a href="# "><img class="fb-w " src="img/Footer/fb_logo_white.png " alt=" ">
                             <img class="fb-ac " src="img/Footer/fb_logo_active.png " alt=" "></a>
                     </li>
                 </ul>
-                <div class="fo-contact "><a href="#">contact</a></div>
+                <div class="fo-contact "><a href="# ">contact</a></div>
             </div>
         </div>
     </div>
 </footer>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
 </body>
 
 </html>
