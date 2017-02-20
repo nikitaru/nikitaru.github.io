@@ -72,6 +72,7 @@ p {
     padding: 0;
     overflow: hidden;
     top: 0;
+    z-index: 50;
     font-family: F_LIGHT;
 }
 
@@ -1111,6 +1112,8 @@ input[type=submit] {
     letter-spacing: 5px;
     transition: 0.2s linear;
     -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
 }
 
 input[type=submit]:hover {
@@ -2505,8 +2508,8 @@ footer {
         font-size: 150%;
     }
     p {
-        font-size: 60%;
-        letter-spacing: 1.5px;
+        font-size: 85%;
+        letter-spacing: 1.8px;
     }
     .sec-container {
         justify-content: center;
@@ -2553,7 +2556,7 @@ footer {
         margin-bottom: 15px;
     }
     .p-flex {
-        line-height: 20px;
+        line-height: 22px;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
