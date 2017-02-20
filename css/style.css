@@ -293,10 +293,6 @@ p {
     width: 100%;
 }
 
-.menu-tri-pic02 {
-    display: none;
-}
-
 
 /* overlay menu*/
 
@@ -1542,13 +1538,6 @@ footer {
         right: 20px;
         top: 10px;
     }
-    /*menu trigger hover effect*/
-    .menu-trigger:hover .menu-tri-pic01 {
-        display: none;
-    }
-    .menu-trigger:hover .menu-tri-pic02 {
-        display: inline-block;
-    }
     /* phone menu style*/
     .closebtn {
         top: 10px;
@@ -1825,13 +1814,6 @@ footer {
         width: 25px;
         right: 20px;
         top: 10px;
-    }
-    /*menu trigger hover effect*/
-    .menu-trigger:hover .menu-tri-pic01 {
-        display: none;
-    }
-    .menu-trigger:hover .menu-tri-pic02 {
-        display: inline-block;
     }
     /* phone menu style*/
     .closebtn {
@@ -2133,13 +2115,6 @@ footer {
         right: 15px;
         top: 10px;
     }
-    /*menu trigger hover effect*/
-    .menu-trigger:hover .menu-tri-pic01 {
-        display: none;
-    }
-    .menu-trigger:hover .menu-tri-pic02 {
-        display: inline-block;
-    }
     /* phone menu style*/
     .closebtn {
         top: 10px;
@@ -2429,13 +2404,6 @@ footer {
         width: 25px;
         right: 15px;
         top: 10px;
-    }
-    /*menu trigger hover effect*/
-    .menu-trigger:hover .menu-tri-pic01 {
-        display: none;
-    }
-    .menu-trigger:hover .menu-tri-pic02 {
-        display: inline-block;
     }
     /* phone menu style*/
     .closebtn {
