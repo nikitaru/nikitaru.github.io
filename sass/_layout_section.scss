@@ -35,6 +35,15 @@
         flex-direction: column;
         text-align: center;
         line-height: 20px;
+        @include ipad {
+            height: 550px
+        }
+        @include mobile_lg {
+            width: 80%;
+        }
+        @include mobile_s {
+            height: 600px;
+        }
         @include smallest {
             height: 600px;
         }
@@ -43,7 +52,7 @@
     .levooya_title {
         margin-bottom: 50px;
         @include mobile_lg {
-            margin-bottom: 0;
+            margin: 10px 0;
         }
         @include mobile_s {
             margin-bottom: 0;
@@ -82,6 +91,16 @@
         -ms-flex-direction: row;
         flex-direction: row;
         cursor: pointer;
+        @include desktop {
+            width: 225px;
+        }
+        @include ipad {
+            width: 210px;
+        }
+        @include mobile_lg {
+            width: 170px;
+            font-size: 65%;
+        }
     }
     
     .access_btn img {
@@ -235,11 +254,8 @@
     
     .icon_wrapper {
         width: 100%;
-        height: 230px;
+        height: 200px;
         background-color: #fff;
-        @include mobile_lg {
-            display: none;
-        }
         @include mobile_s {
             display: none;
         }
@@ -363,9 +379,6 @@
     .wrapper_describe {
         width: 100%;
         height: 400px;
-        @include mobile_lg {
-            display: none;
-        }
         @include mobile_s {
             display: none;
         }
@@ -390,12 +403,30 @@
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
+            @include desktop {
+                width: 90%;
+            }
+            @include ipad {
+                width: 90%;
+            }
+            @include mobile_lg {
+                width: 90%;
+            }
         }
         .describe_box {
             width: 300px;
             height: 320px;
             border: 0.1px #E0E0E0 solid;
             box-shadow: 1px 1px 5px #E0E0E0;
+            @include desktop {
+                width: 250px;
+            }
+            @include ipad {
+                width: 220px;
+            }
+            @include mobile_lg {
+                width: 180px;
+            }
             .box_title {
                 width: 100%;
                 height: 60px;
@@ -405,6 +436,15 @@
                 color: white;
                 font-family: "F_LIGHT";
                 font-size: 110%;
+                @include desktop {
+                    font-size: 100%;
+                }
+                @include ipad {
+                    font-size: 85%;
+                }
+                @include mobile_lg {
+                    font-size: 75%;
+                }
             }
             .box_content {
                 width: 100%;
@@ -416,6 +456,9 @@
                 font-family: "F_LIGHT";
                 font-size: 80%;
                 letter-spacing: 0.5px;
+                @include mobile_lg {
+                    padding: 20px 20px 0 30px;
+                }
             }
             .box_btn {
                 position: relative;
@@ -425,6 +468,15 @@
                     position: absolute;
                     left: 50%;
                     margin-left: -120px;
+                    @include desktop {
+                        margin-left: -113px;
+                    }
+                    @include ipad {
+                        margin-left: -105px;
+                    }
+                    @include mobile_lg {
+                        margin-left: -85px;
+                    }
                 }
             }
         }
@@ -434,10 +486,8 @@
     .mobile_icon_wrapper {
         display: none;
         width: 100%;
-        height: 600px;
-        @include mobile_lg {
-            display: block;
-        }
+        height: 700px;
+        overflow-y: hidden;
         @include mobile_s {
             display: block;
         }
@@ -509,7 +559,7 @@
         line-height: 60px;
         color: white;
         font-family: F_LIGHT;
-        font-size: 110%;
+        font-size: 95%;
     }
     
     .box_content {
@@ -654,10 +704,13 @@
         -ms-flex-align: center;
         align-items: center;
         @include bigscreen {
-            height: 900px;
+            min-height: 900px;
+        }
+        @include ipad {
+            min-height: 800px;
         }
         @include mobile_lg {
-            display: none;
+            min-height: 700px;
         }
         @include mobile_s {
             display: none;
@@ -685,6 +738,15 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        @include desktop {
+            width: 90%;
+        }
+        @include ipad {
+            width: 90%;
+        }
+        @include mobile_lg {
+            width: 90%;
+        }
     }
     
     .intro_left,
@@ -704,6 +766,9 @@
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
+        @include ipad {
+            align-items: center;
+        }
     }
     
     .intro_box {
@@ -756,6 +821,9 @@
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: flex-end;
+        @include ipad {
+            padding-left: 20px;
+        }
     }
     
     .intro_right_title {
@@ -767,6 +835,18 @@
         letter-spacing: 0.5px;
         margin-bottom: 10px;
         text-align: left;
+        @include desktop {
+            font-size: 200%;
+            margin-bottom: 30px;
+        }
+        @include ipad {
+            font-size: 180%;
+            margin-bottom: 30px;
+        }
+        @include mobile_lg {
+            font-size: 180%;
+            margin-bottom: 30px;
+        }
     }
     
     .intro_right_content {
@@ -778,6 +858,14 @@
         padding-left: 3px;
         margin-bottom: 25px;
         text-align: left;
+        @include desktop {
+            font-size: 125%;
+            margin-bottom: 40px;
+        }
+        @include mobile_lg {
+            font-size: 100%;
+            margin-bottom: 30px;
+        }
     }
     /*right icon*/
     
@@ -815,9 +903,6 @@
         background-color: $phone-btn-color;
         padding: 50px 0 0 0;
         display: none;
-        @include mobile_lg {
-            display: block;
-        }
         @include mobile_s {
             display: block;
         }
@@ -864,95 +949,101 @@
                     width: 60px;
                     height: 80px;
                     display: inline-block;
-                    img {
-                        width: 100%;
+                    @include mobile_s {
+                        cursor: pointer;
                     }
-                    .underline_show {
-                        margin-top: 5px;
-                        width: 70%;
-                        height: 3px;
-                        margin: auto;
-                        display: block;
-                        margin-top: 10px;
-                        background-color: $main-color;
-                        -webkit-transition: 0.3s ease;
-                        transition: 0.3s ease;
+                    @include smallest {
+                        cursor: pointer;
                     }
                 }
-                #shop_hover,
-                #arrowplace_icon,
-                #bag_hover {
-                    display: none;
+                img {
+                    width: 100%;
+                }
+                .underline_show {
+                    margin-top: 5px;
+                    width: 70%;
+                    height: 3px;
+                    margin: auto;
+                    display: block;
+                    margin-top: 10px;
+                    background-color: $main-color;
                     -webkit-transition: 0.3s ease;
                     transition: 0.3s ease;
                 }
+            }
+            #shop_hover,
+            #arrowplace_icon,
+            #bag_hover {
+                display: none;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
             }
         }
-        .intro_text_box {
-            width: 100%;
-            height: 280px;
-            margin-top: 10px;
-            position: relative;
-            .introbox_set {
-                height: 110px;
-                margin: 30px auto;
-                position: absolute;
-                left: 50%;
+    }
+    
+    .intro_text_box {
+        width: 100%;
+        height: 280px;
+        margin-top: 10px;
+        position: relative;
+        .introbox_set {
+            height: 110px;
+            margin: 30px auto;
+            position: absolute;
+            left: 50%;
+            background-color: $phone-btn-color;
+            border-radius: 5px;
+            padding: 20px 20px 0 20px;
+            box-shadow: 1px 1px 50px #d0d0d0;
+            .m_intro_title {
+                color: $main-color;
+                font-family: "F_LIGHT";
+                font-size: 100%;
+                margin-bottom: 4px;
+            }
+            .m_intro_content {
+                color: $text-color;
+                font-family: "F_LIGHT";
+                font-size: 80%;
+                line-height: 16px;
+            }
+            .active_line_show {
+                display: block;
+                width: 30px;
+                background-color: $main-color;
+                height: 3px;
+                border: none;
+                margin-bottom: 10px;
+                -webkit-transition: 0.5s ease;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+            }
+            .active_line_hide {
+                display: block;
+                width: 30px;
                 background-color: $phone-btn-color;
-                border-radius: 5px;
-                padding: 20px 20px 0 20px;
-                box-shadow: 1px 1px 50px #d0d0d0;
-                .m_intro_title {
-                    color: $main-color;
-                    font-family: "F_LIGHT";
-                    font-size: 100%;
-                    margin-bottom: 4px;
-                }
-                .m_intro_content {
-                    color: $text-color;
-                    font-family: "F_LIGHT";
-                    font-size: 80%;
-                    line-height: 16px;
-                }
-                .active_line_show {
-                    display: block;
-                    width: 30px;
-                    background-color: $main-color;
-                    height: 3px;
-                    border: none;
-                    margin-bottom: 10px;
-                    -webkit-transition: 0.5s ease;
-                    -webkit-transition: 0.3s ease;
-                    transition: 0.3s ease;
-                }
-                .active_line_hide {
-                    display: block;
-                    width: 30px;
-                    background-color: $phone-btn-color;
-                    height: 3px;
-                    border: none;
-                    margin-bottom: 10px;
-                    -webkit-transition: 0.5s ease;
-                    transition: 0.5s ease;
-                }
+                height: 3px;
+                border: none;
+                margin-bottom: 10px;
+                -webkit-transition: 0.5s ease;
+                transition: 0.5s ease;
             }
-            .introbox_under {
-                width: 250px;
-                margin-left: -125px;
-            }
-            .introbox_up {
-                width: 280px;
-                margin-left: -140px;
-                top: 23%;
-                z-index: 2;
-            }
-            #mobile_intro_box1 {
-                top: 0%;
-            }
-            #mobile_intro_box2 {}
-            #mobile_intro_box3 {
-                top: 45%;
-            }
+        }
+        .introbox_under {
+            width: 250px;
+            margin-left: -125px;
+        }
+        .introbox_up {
+            width: 280px;
+            margin-left: -140px;
+            top: 23%;
+            z-index: 2;
+        }
+        #mobile_intro_box1 {
+            top: 0%;
+        }
+        #mobile_intro_box3 {
+            top: 45%;
         }
     }
     /*// content box 07 - Download //*/
@@ -975,6 +1066,9 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        @include mobile_s {
+            height: 650px;
+        }
         @include smallest {
             height: 500px;
         }
@@ -982,6 +1076,9 @@
     
     .download_pic01 {
         width: 120px;
+        @include mobile_s {
+            width: 100px;
+        }
         @include smallest {
             width: 100px;
         }
@@ -999,6 +1096,9 @@
         margin: 50px 0 30px 0;
         font-size: 270%;
         letter-spacing: 1.2px;
+        @include mobile_s {
+            font-size: 180%;
+        }
         @include smallest {
             font-size: 180%;
         }
@@ -1011,6 +1111,9 @@
         letter-spacing: 0.8px;
         text-align: center;
         margin-bottom: 60px;
+        @include mobile_s {
+            font-size: 90%;
+        }
         @include smallest {
             font-size: 80%;
         }
@@ -1030,6 +1133,9 @@
         align-items: center;
         background-color: #fff;
         border-radius: 50px;
+        @include mobile_s {
+            width: 170px;
+        }
         @include smallest {
             width: 170px;
         }

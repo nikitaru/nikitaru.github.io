@@ -49,7 +49,6 @@
         -ms-flex-pack: center;
         justify-content: center;
         width: 100px;
-        padding-top: 5px;
         display: -webkit-flex;
         -webkit-justify-content: center;
         -webkit-align-items: center;
@@ -303,6 +302,7 @@
             display: inline-block;
         }
         @include ipad {
+            right:30px;
             display: inline-block;
         }
         @include mobile_lg {
@@ -353,6 +353,18 @@
         -moz-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         -webkit-transition: 0.3s ease;
+        @include ipad {
+            right: 26px;
+        }
+        @include mobile_lg {
+            right: 26px;
+        }
+        @include mobile_s {
+            right: 26px;
+        }
+        @include smallest {
+            right: 26px;
+        }
     }
     .closebtn:hover,
     .closebtn:focus {
@@ -398,7 +410,7 @@
             align-items: center;
             text-align: center;
             @include mobile_lg {
-                padding-top: 45px;
+                padding-top: 0px;
             }
             .phone_btn a {
                 font-family: F_LIGHT;
@@ -412,6 +424,18 @@
                 letter-spacing: 3px;
                 margin-bottom: 10px;
                 border-bottom: 2px solid rgba(0, 0, 0, 0);
+                @include desktop {
+                    font-size: 150%;
+                }
+                @include ipad {
+                    font-size: 150%;
+                }
+                @include mobile_lg {
+                    padding: 10px 0;
+                }
+                @include smallest {
+                    padding: 10px 0;
+                }
             }
             .phone_btn a:hover,
             .phone_btn a:focus {
@@ -450,11 +474,29 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+            @include desktop {
+                width: 190px;
+            }
+            @include ipad {
+                width: 190px;
+            }
+            @include mobile_lg {
+                margin-top: 0px;
+            }
+            @include smallest {
+                margin-top: 0px;
+            }
             hr {
                 width: 152px;
                 height: 1.5px;
                 background-color: $phone-btn-color;
                 border: none;
+                @include desktop {
+                    width: 190px;
+                }
+                @include ipad {
+                    width: 190px;
+                }
             }
         }
     }
@@ -481,6 +523,15 @@
     justify-content: space-between;
     text-decoration: none;
     padding-top: 20px;
+    @include desktop {
+        width: 200px;
+    }
+    @include ipad {
+        width: 200px;
+    }
+    @include mobile_lg {
+        padding-top: 5px;
+    }
 }
 
 .p_mail_icon,

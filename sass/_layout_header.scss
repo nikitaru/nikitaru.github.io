@@ -46,9 +46,18 @@
     position: absolute;
     bottom: 30px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -20px;
     z-index: 2;
     text-align: center;
+    @include ipad {
+        margin-left: -32px;
+    }
+    @include mobile_lg {
+        margin-left: -32px;
+    }
+    @include mobile_s {
+        margin-left: -32px;
+    }
     @include smallest {
         margin-left: -32px;
     }

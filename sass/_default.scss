@@ -10,7 +10,6 @@ $text-color: #7B7B7B;
 
 @include font-face("F_LIGHT", font-files("MuseoSans_500.svg", "MuseoSans_300.ttf", "MuseoSans_300.woff", "MuseoSans_300.woff2", "MuseoSans_300.eot"));
 @include font-face("F_REGULAR", font-files("MuseoSans_500.svg", "MuseoSans_500.ttf", "MuseoSans_500.woff", "MuseoSans_500.woff2", "MuseoSans_500.eot"));
-
 * {
     box-sizing: border-box;
 }
@@ -95,15 +94,17 @@ p {
         letter-spacing: 0.8px;
     }
     @include ipad {
-        text-align: justify;
-        text-justify: auto;
+        text-align: left;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
     }
     @include mobile_lg {
         text-align: left;
+        margin-top: 20px;
     }
     @include smallest {
         text-align: left;
-        margin-top: 20px;
+        margin-top: 25px;
         font-size: 90%;
     }
 }
@@ -111,6 +112,15 @@ p {
 p:first-letter {
     @include desktop {
         font-size: 120%;
+    }
+    @include ipad {
+        font-size: 140%;
+    }
+    @include mobile_lg {
+        font-size: 140%;
+    }
+    @include mobile_s {
+        font-size: 140%;
     }
     @include smallest {
         font-size: 140%;
