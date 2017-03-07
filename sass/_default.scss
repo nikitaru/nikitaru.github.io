@@ -1,0 +1,118 @@
+/*color*/
+
+$main-color: #19D7C7;
+$menu-btn-border: rgba(255, 255, 255, 0.9);
+$navbg: #ffffff;
+$phone-btn-color: #f5f5f5;
+$text-color: #7B7B7B;
+
+/*font*/
+
+@include font-face("F_LIGHT", font-files("MuseoSans_500.svg", "MuseoSans_300.ttf", "MuseoSans_300.woff", "MuseoSans_300.woff2", "MuseoSans_300.eot"));
+@include font-face("F_REGULAR", font-files("MuseoSans_500.svg", "MuseoSans_500.ttf", "MuseoSans_500.woff", "MuseoSans_500.woff2", "MuseoSans_500.eot"));
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 330%;
+    font-family: "F_REGULAR";
+    letter-spacing: 2px;
+    @include mobile_lg {
+        font-size: 250%;
+    }
+    @include mobile_s {
+        font-size: 250%;
+    }
+    @include smallest {
+        font-size: 190%;
+        line-height: 35px;
+    }
+}
+
+h2 {
+    font-size: 250%;
+    font-family: "F_REGULAR";
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 200%;
+    font-family: "F_REGULAR";
+    letter-spacing: 1px;
+    @include bigscreen {
+        font-size: 230%;
+    }
+    @include desktop {
+        font-size: 230%;
+    }
+    @include mobile_lg {
+        font-size: 180%;
+    }
+    @include smallest {
+        font-size: 130%;
+        line-height: 25px;
+    }
+}
+
+h4 {
+    font-size: 190%;
+    font-family: "F_REGULAR";
+    @include bigscreen {
+        font-size: 210%;
+    }
+    @include desktop {
+        font-size: 240%;
+        letter-spacing: 1px;
+    }
+}
+
+p {
+    font-size: 100%;
+    font-family: "F_LIGHT";
+    letter-spacing: 1px;
+    line-height: 30px;
+    @include bigscreen {
+        font-size: 130%;
+        line-height: 35px;
+    }
+    @include desktop {
+        font-size: 130%;
+        text-align: justify;
+        margin-bottom: 20px;
+        letter-spacing: 0.8px;
+    }
+    @include ipad {
+        text-align: justify;
+        text-justify: auto;
+    }
+    @include mobile_lg {
+        text-align: left;
+    }
+    @include smallest {
+        text-align: left;
+        margin-top: 20px;
+        font-size: 90%;
+    }
+}
+
+p:first-letter {
+    @include desktop {
+        font-size: 120%;
+    }
+    @include smallest {
+        font-size: 140%;
+    }
+}

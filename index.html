@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Levooya</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/themes/light/light.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/themes/dark/dark.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/themes/bar/bar.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-main-style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
 </head>
 
 <body>
-    <!-- NAV -->
+    <!-- NAV Desktop-->
     <!-- Navigation -->
     <nav class="main_nav">
         <div class="nav_container">
@@ -26,7 +22,7 @@
             </div>
             <ul class="menu">
                 <li class="m_btn"><a href="#">ABOUT</a></li>
-                <li class="m_btn"><a href="#">SELLER</a></li>
+                <li class="m_btn"><a href="pages/seller/seller_ch.html">SELLER</a></li>
                 <li class="m_btn"><a href="#">BLOG</a></li>
                 <li class="m_btn"><a href="#">HELP CENTER</a></li>
                 <li class="m_btn"><a href="#">EN</a>&nbsp;|&nbsp;<a href="#">中文</a></li>
@@ -50,14 +46,15 @@
             </span>
         </div>
     </nav>
+    <!-- NAV FOR MOBILE -->
     <nav id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav() ">&times;</a>
         <div class="overlay_content">
             <ul class="phone_menu">
-                <li class="phone_btn"><a href="#">關於我們</a></li>
-                <li class="phone_btn"><a href="#">成為旅行者</a></li>
-                <li class="phone_btn"><a href="#">部落格</a></li>
-                <li class="phone_btn"><a href="#">幫助中心</a></li>
+                <li class="phone_btn"><a href="#">ABOUT</a></li>
+                <li class="phone_btn"><a href="pages/seller/seller_ch.html">SELLER</a></li>
+                <li class="phone_btn"><a href="#">BLOG</a></li>
+                <li class="phone_btn"><a href="#">HELP</a></li>
                 <li class="phone_btn phone_en_ch">
                     <a href="#" class="phone_en_btn">EN</a>
                     <a href="#">中文</a>
@@ -90,15 +87,10 @@
             </div>
         </div>
     </nav>
-    <!--  Header -->
-    <header>
-        <div class="slider-wrapper theme-default">
-            <div id="slider" class="nivoSlider">
-                <img src="img/Body/Body03.jpg" data-transition="sliceDownLeft" data-thumb="img/Body/Body.jpg" alt="" title="#htmlcaption" />
-                <img src="img/Body/Body02.jpg" data-transition="sliceUpLeft" data-thumb="img/Body/Body.jpg" alt="" title="#htmlcaption" />
-                <img src="img/Body/Body01.jpg" data-transition="sliceUpDownLeft" data-thumb="img/Body/Body.jpg" alt="" title="#htmlcaption" />
-            </div>
-            <div id="htmlcaption" class="nivo-html-caption">
+    <!-- SLIDER -->
+    <div id="slider">
+        <ul class="slides">
+            <li class="slide">
                 <div class="h_container">
                     <div class="h_title">
                         <h1>Explore and Shop.</h1>
@@ -114,16 +106,72 @@
                         </div>
                     </div>
                 </div>
+            </li>
+            <li class="slide">
+                <div class="h_container">
+                    <div class="h_title">
+                        <h1>Explore and Shop.</h1>
+                        <h1>Travel and Sell.</h1>
+                    </div>
+                    <div class="h_notes">
+                        <div class="hr01">
+                            <hr>
+                        </div>
+                        <div>at&nbsp;&nbsp;LEVOOYA</div>
+                        <div class="hr02">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="h_container">
+                    <div class="h_title">
+                        <h1>Explore and Shop.</h1>
+                        <h1>Travel and Sell.</h1>
+                    </div>
+                    <div class="h_notes">
+                        <div class="hr01">
+                            <hr>
+                        </div>
+                        <div>at&nbsp;&nbsp;LEVOOYA</div>
+                        <div class="hr02">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="h_container">
+                    <div class="h_title">
+                        <h1>Explore and Shop.</h1>
+                        <h1>Travel and Sell.</h1>
+                    </div>
+                    <div class="h_notes">
+                        <div class="hr01">
+                            <hr>
+                        </div>
+                        <div>at&nbsp;&nbsp;LEVOOYA</div>
+                        <div class="hr02">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div class="caption">
+                <a id="caption1" href="#"></a>
+                <a id="caption2" href="#"></a>
+                <a id="caption3" href="#"></a>
             </div>
-        </div>
-    </header>
+        </ul>
+    </div>
     <!--Section -->
     <!-- Content Box *01* levooya introduce-->
     <section class="wrapper_levooya">
         <div class="container_levooya">
             <h3 class="levooya_title">MAKE MONEY TRAVELING</h3>
             <p>Levooya is a simple way to buy and sell any overseas products from anyway to everywhere.</p>
-            <p>We connect travelers with shoppers around the world,empower travelers to become sellers of their own and make extra money along the journey,and allow shoppers to buy their request.</p>
+            <p>We connect travelers with shoppers around the world&nbsp;,&nbsp;empower travelers to become sellers of their own and make extra money along the journey&nbsp;,&nbsp;and allow shoppers to buy their request.</p>
             <a href="#" class="access_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
             <img src="img/icon/arrow.png" alt="arrow_pic_right"></a>
         </div>
@@ -141,19 +189,19 @@
                     Yeezy&nbsp;&nbsp;Boost
                 </div>
             </div>
+            <div class="wrapper_app">
+                <div class="container_app">
+                    <div class="app_title">
+                        <h4>LEVOOYA&nbsp;APP&nbsp;101</h4>
+                    </div>
+                    <div class="app_text">
+                        Explore and Shop&nbsp;,&nbsp;Travel and Sell
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="wrapper_app">
-        <div class="app_title">
-            <h4>LEVOOYA&nbsp;APP&nbsp;101</h4>
-        </div>
-        <div class="app_text">
-            Explore and Shop&nbsp;,&nbsp;Travel and Sell
-        </div>
-    </div>
-    <div class="color_green"></div>
-    <!--填色-->
-    <!-- icon section -->
+    <!-- Content Box *03* three icon-->
     <section class="icon_wrapper">
         <div class="icon_container">
             <div class="icon_picbox">
@@ -180,7 +228,7 @@
             </div>
         </div>
     </section>
-    <!-- describe section -->
+    <!-- Content Box *04* describe-->
     <section class="wrapper_describe">
         <div class="container_describe">
             <div class="describe_box">
@@ -189,8 +237,8 @@
                     Buy form seller's handpicked collections or name your very own purchase requests.
                 </div>
                 <div class="box_btn">
-                    <a href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
-            <img src="img/icon/arrow.png" alt="arrow_right"></a>
+                    <a href="#" class="access_btn box_ac_btn content_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></a>
                 </div>
             </div>
             <div class="describe_box">
@@ -199,8 +247,8 @@
                     We create a trustworthy network,assure product quality and monitor transaction safety.
                 </div>
                 <div class="box_btn">
-                    <a href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
-            <img src="img/icon/arrow.png" alt="arrow_right"></a>
+                    <a href="#" class="access_btn box_ac_btn content_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></a>
                 </div>
             </div>
             <div class="describe_box">
@@ -209,13 +257,82 @@
                     Sell any items you want,or accept buyer's purchase requests.
                 </div>
                 <div class="box_btn">
-                    <a href="#" class="access_btn box_ac_btn"><span class="access-btn-p">GET EXLUSSIVE ACCESS</span>
-            <img src="img/icon/arrow.png" alt="arrow_right"></a>
+                    <a href="#" class="access_btn box_ac_btn content_btn"><span class="access_btn_p content_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- introduction section -->
+    <!-- Content Box *04* mobile sec-->
+    <section class="mobile_icon_wrapper">
+        <div class="mobile_caption">
+            <div class="cap_wall">
+                <div class="cap_container">
+                    <a href="#" class="caption1"><img src="img/icon/levooya.png" alt=""></a>
+                    <a href="#" class="caption3"><img src="img/icon/traveler.png" alt=""></a>
+                    <a href="#" class="caption2"><img src="img/icon/shopper.png" alt=""></a>
+                </div>
+            </div>
+            <div id="leftarrow">
+                <img src="img/icon/left_arrow.png" alt="leftarrow">
+            </div>
+            <div id="rightarrow">
+                <img src="img/icon/right_arrow.png" alt="rightarrow">
+            </div>
+        </div>
+        <div class="mobile_line_dot">
+            <div class="mobile_line"></div>
+            <div class="mobile_dot">
+                <div class="m_dot"></div>
+            </div>
+        </div>
+        <div id="mobile_slider">
+            <div class="text_container">
+                <a href="" class="box3 content_slide">
+                    <div class="box_title">MAKE MONEY TRAVELING</div>
+                    <div class="box_content">
+                        Sell any items you want,or accept buyer's purchase requests.
+                    </div>
+                    <div href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></div>
+                </a>
+                <a href="" class="box1 content_slide">
+                    <div class="box_title">SHOP THE WORLD</div>
+                    <div class="box_content">
+                        Buy form seller's handpicked collections or name your very own purchase requests.
+                    </div>
+                    <div href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></div>
+                </a>
+                <a href="" class="box2 content_slide">
+                    <div class="box_title">SECURE YOUR TRANSECTION</div>
+                    <div class="box_content">
+                        We create a trustworthy network,assure product quality and monitor transaction safety.
+                    </div>
+                    <div href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></div>
+                </a>
+                <a href="" class="box3 content_slide">
+                    <div class="box_title">MAKE MONEY TRAVELING</div>
+                    <div class="box_content">
+                        Sell any items you want,or accept buyer's purchase requests.
+                    </div>
+                    <div href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></div>
+                </a>
+                <a href="" class="box1 content_slide">
+                    <div class="box_title">SHOP THE WORLD</div>
+                    <div class="box_content">
+                        Buy form seller's handpicked collections or name your very own purchase requests.
+                    </div>
+                    <div href="#" class="access_btn box_ac_btn"><span class="access_btn_p">GET EXLUSSIVE ACCESS</span>
+                        <img src="img/icon/arrow.png" alt="arrow_right"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-- Content Box *05* introduction-->
     <section class="wrapper_introduc">
         <div class="container_intro">
             <div class="intro_left">
@@ -262,6 +379,61 @@
             </div>
         </div>
     </section>
+    <!--Mobile Introduc Section -->
+    <section class="mobile_wrapper_introduc">
+        <div class="mobile_container_intro">
+            <div class="mobile_intro_title">
+                EASY BREEZY NO BIGGIE&nbsp;!
+            </div>
+            <div class="mobile_intro_content">
+                Shop the world at your fingertips
+            </div>
+            <div class="intro_icon">
+                <span id="intro_btn1">
+                    <img id="shop_icon" src="img/icon/shop.png" alt="shop_icon">
+                    <img id="shop_hover" src="img/icon/shop_hover.png" alt="shop_icon">
+                    <div id="underline1"></div>
+                </span>
+                <span id="intro_btn2">
+                    <img id="arrowplace_icon" src="img/icon/arrowplace.png" alt="arrowplace">
+                    <img id="arrowplace_hover" src="img/icon/arrowplace_hover.png" alt="arrowplace">
+                    <div id="underline2" class="underline_show"></div>
+                </span>
+                <span id="intro_btn3">
+                    <img id="bag_icon" src="img/icon/bag.png" alt="bag">
+                    <img id="bag_hover" src="img/icon/bag_hover.png" alt="bag">
+                    <div id="underline3"></div>
+                </span>
+            </div>
+            <div class="intro_text_box">
+                <div id="mobile_intro_box1" class="introbox_set introbox_under">
+                    <div id="line1" class="active_line_hide"></div>
+                    <div class="m_intro_title">Explore Daily
+                    </div>
+                    <div class="m_intro_content">
+                        Discover latest trends , get your hands on the hottest overseas products.
+                    </div>
+                </div>
+                <div id="mobile_intro_box2" class="introbox_set introbox_up">
+                    <div id="line2" class="active_line_show"></div>
+                    <div class="m_intro_title">Travel Pleasantly
+                    </div>
+                    <div class="m_intro_content">
+                        Make extra money while expierencing the world.
+                    </div>
+                </div>
+                <div id="mobile_intro_box3" class="introbox_set introbox_under">
+                    <div id="line3" class="active_line_hide"></div>
+                    <div class="m_intro_title">Shop Freely
+                    </div>
+                    <div class="m_intro_content">
+                        Buy anything you want from travelers all over the world.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content Box *06* Download-->
     <section class="wrapper_download">
         <div class="download_pic01">
             <img src="img/icon/get_shopping.png" alt="download_app_pic">
@@ -296,56 +468,10 @@
                                 <img class="fb_ac" src="img/Footer/fb_logo_active.png" alt="fb_active"></a>
                         </li>
                     </ul>
-                    <div class="fo_contact"><a href="#">contact</a></div>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-    window.addEventListener("load", function() {
-        setTimeout(function() {
-            window.scrollTo(0, 1);
-        }, 10);
-    });
-
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-    }
-    </script>
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider({
-            effect: 'fade', // Specify sets like: 'fold,fade,sliceDown' 
-            slices: 15, // For slice animations 
-            boxCols: 8, // For box animations 
-            boxRows: 4, // For box animations 
-            animSpeed: 500, // Slide transition speed 
-            pauseTime: 3000, // How long each slide will show 
-            startSlide: 0, // Set starting Slide (0 index) 
-            directionNav: true, // Next & Prev navigation 
-            controlNav: true, // 1,2,3... navigation 
-            controlNavThumbs: false, // Use thumbnails for Control Nav 
-            pauseOnHover: false, // Stop animation while hovering 
-            manualAdvance: false, // Force manual transitions 
-            prevText: 'Prev', // Prev directionNav text 
-            nextText: 'Next', // Next directionNav text 
-            randomStart: false, // Start on a random slide 
-            beforeChange: function() {}, // Triggers before a slide transition 
-            afterChange: function() {}, // Triggers after a slide transition 
-            slideshowEnd: function() {}, // Triggers after all slides have been shown 
-            lastSlide: function() {}, // Triggers when last slide is shown 
-            afterLoad: function() {} // Triggers when slider has loaded 
-        });
-
-    });
-    </script>
-    <script type="text/javascript" src="js/all.js"></script>
 </body>
 
 </html>
