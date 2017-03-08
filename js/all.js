@@ -1,18 +1,22 @@
-window.scrollTo(0,0);
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        window.scrollTo(0, 1);
+    }, 10);
+});
 // Nav mobile
 $(document).ready(function() {
     $('#myNav').hide();
     $('#openNav').click(function(event) {
         /* Act on the event */
         $('#myNav').fadeIn(200);
-        $('body').css('overflow','hidden');
+        $('body').css('overflow', 'hidden');
     });
     $('#closeNav').click(function(event) {
         event.preventDefault();
         /* Act on the event */
         ;
         $('#myNav').fadeOut(300);
-        $('body').css('overflow','auto');
+        $('body').css('overflow', 'auto');
     });
     $('.nav_so_icon').hide();
     $('a#open_contact').mouseenter(function() {
