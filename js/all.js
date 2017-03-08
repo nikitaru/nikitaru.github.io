@@ -1,3 +1,4 @@
+window.scrollTo(0,0);
 // Nav mobile
 $(document).ready(function() {
     $('#myNav').hide();
