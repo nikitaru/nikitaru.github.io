@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Levooya -> Travel & Sell !">
+    <meta name="keywords" content="travel,sell,levooya,app,ios">
+    <meta name="author" content="Nikita Lyu">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Levooya</title>
@@ -18,11 +21,13 @@
         <div class="nav_container">
             <div class="logo">
                 <a href="index.html"><img src="img/Nav_Desktop/Levooya_bk.png" alt="logo_image" class="logo_pic l_p01">
-                    <img src="img/Nav_Desktop/Levooya_bk02.png" alt="logo" class="logo_pic l_p02"></a>
+                    <img src="img/Nav_Desktop/Levooya_bk02.png" alt="logo_image_hover" class="logo_pic l_p02">
+                </a>
             </div>
             <ul class="menu">
                 <li class="m_btn"><a href="#">ABOUT</a></li>
                 <li class="m_btn"><a href="pages/seller/seller_ch.html">SELLER</a></li>
+                <li class="m_btn"><a href="#">DOWNLOAD</a></li>
                 <li class="m_btn"><a href="#">BLOG</a></li>
                 <li class="m_btn"><a href="#">HELP CENTER</a></li>
                 <li class="m_btn"><a href="#">EN</a>&nbsp;|&nbsp;<a href="#">中文</a></li>
@@ -30,7 +35,7 @@
             <div class="nav_contact_container">
                 <ul class="nav_so_icon">
                     <li class="mail_icon">
-                        <a href="#"><img src="img/Nav_Desktop/mail_icon.png" alt="mail_pic"></a>
+                        <a href="#"><img src="img/Nav_Desktop/mail_icon.png" alt="email"></a>
                     </li>
                     <li class="ig_icon">
                         <a href="#"><img src="img/Nav_Desktop/ig_icon.png" alt="instagram"></a>
@@ -41,18 +46,19 @@
                 </ul>
                 <a href="#" class="nav_contact" id="open_contact">CONTACT</a>
             </div>
-            <span class="menu_trigger" onclick="openNav()">
+            <span class="menu_trigger" id="openNav">
                 <img src="img/Nav_phone/hamburger.png" alt="menu-mobile">
             </span>
         </div>
     </nav>
     <!-- NAV FOR MOBILE -->
     <nav id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav() ">&times;</a>
+        <a href="#" class="closebtn" id="closeNav">&times;</a>
         <div class="overlay_content">
             <ul class="phone_menu">
                 <li class="phone_btn"><a href="#">ABOUT</a></li>
                 <li class="phone_btn"><a href="pages/seller/seller_ch.html">SELLER</a></li>
+                <li class="phone_btn"><a href="#">DOWNLOAD</a></li>
                 <li class="phone_btn"><a href="#">BLOG</a></li>
                 <li class="phone_btn"><a href="#">HELP</a></li>
                 <li class="phone_btn phone_en_ch">
@@ -184,7 +190,7 @@
                 <div class="product_text">
                     I&nbsp;&nbsp;want
                 </div>
-                <img src="img/Body/p.png" class="product_pic" alt="shoe">
+                <img src="img/Body/p.png" class="product_pic" alt="product_image">
                 <div class="product_name">
                     Yeezy&nbsp;&nbsp;Boost
                 </div>
@@ -205,9 +211,9 @@
     <section class="icon_wrapper">
         <div class="icon_container">
             <div class="icon_picbox">
-                <div class="iconpic"><img src="img/icon/shopper.png" alt=""></div>
-                <div class="iconpic"><img src="img/icon/levooya.png" alt=""></div>
-                <div class="iconpic"><img src="img/icon/traveler.png" alt=""></div>
+                <div class="iconpic"><img src="img/icon/shopper.png" alt="shop_icon"></div>
+                <div class="iconpic"><img src="img/icon/levooya.png" alt="levooya_icon"></div>
+                <div class="iconpic"><img src="img/icon/traveler.png" alt="traveler_icon"></div>
             </div>
             <div class="dot_line">
                 <div class="icon_line">
@@ -268,9 +274,9 @@
         <div class="mobile_caption">
             <div class="cap_wall">
                 <div class="cap_container">
-                    <a href="" class="caption1"><img src="img/icon/levooya.png" alt=""></a>
-                    <a href="" class="caption3"><img src="img/icon/traveler.png" alt=""></a>
-                    <a href="" class="caption2"><img src="img/icon/shopper.png" alt=""></a>
+                    <a href="" class="caption1"><img src="img/icon/levooya.png" alt="levooya_icon"></a>
+                    <a href="" class="caption3"><img src="img/icon/traveler.png" alt="traveler_icon"></a>
+                    <a href="" class="caption2"><img src="img/icon/shopper.png" alt="shopper_icon"></a>
                 </div>
             </div>
             <div id="leftarrow">
@@ -336,7 +342,7 @@
     <section class="wrapper_introduc">
         <div class="container_intro">
             <div class="intro_left">
-                <div class="intro_box">
+                <div class="intro_box" id="shopbox">
                     <div class="intro_title">
                         Explore Daily
                     </div>
@@ -344,12 +350,12 @@
                         Discover latest trends&nbsp;,&nbsp;get your hands on the hottest overseas products.
                     </div>
                 </div>
-                <div class="intro_box">
+                <div class="intro_box" id="arrowplacebox">
                     <div class="intro_title">Travel Pleasantly</div>
                     <div class="intro_content">
                         Make extra money while expierencing the world. </div>
                 </div>
-                <div class="intro_box">
+                <div class="intro_box" id="bagbox">
                     <div class="intro_title">
                         Shop Freely
                     </div>
@@ -366,15 +372,18 @@
                     Shop the world at your fingertips
                 </div>
                 <div class="intro_right_iconbox">
-                    <a href="#" class="intro_btn">
-                        <img src="img/icon/shop.png" alt="shopicon">
-                    </a>
-                    <a href="#" class="intro_btn">
-                        <img src="img/icon/arrowplace.png" alt="tagicon">
-                    </a>
-                    <a href="#" class="intro_btn">
-                        <img src="img/icon/bag.png" alt="bagicon">
-                    </a>
+                    <div class="intro_btn shopicon">
+                        <img id="shop_icon" src="img/icon/shop.png" alt="shopicon">
+                        <img id="shop_hover" src="img/icon/shop_hover.png" alt="shopicon">
+                    </div>
+                    <div class="intro_btn arrowplaceicon">
+                        <img id="arrowplace_icon" src="img/icon/arrowplace.png" alt="tagicon">
+                        <img id="arrowplace_hover" src="img/icon/arrowplace_hover.png" alt="tagicon">
+                    </div>
+                    <div class="intro_btn bagicon">
+                        <img id="bag_icon" src="img/icon/bag.png" alt="bagicon">
+                        <img id="bag_hover" src="img/icon/bag_hover.png" alt="bagicon">
+                    </div>
                 </div>
             </div>
         </div>
@@ -390,18 +399,18 @@
             </div>
             <div class="intro_icon">
                 <span id="intro_btn1">
-                    <img id="shop_icon" src="img/icon/shop.png" alt="shop_icon">
-                    <img id="shop_hover" src="img/icon/shop_hover.png" alt="shop_icon">
+                    <img id="m_shop_icon" src="img/icon/shop.png" alt="shop_icon">
+                    <img id="m_shop_hover" src="img/icon/shop_hover.png" alt="shop_icon_hover">
                     <div id="underline1"></div>
                 </span>
                 <span id="intro_btn2">
-                    <img id="arrowplace_icon" src="img/icon/arrowplace.png" alt="arrowplace">
-                    <img id="arrowplace_hover" src="img/icon/arrowplace_hover.png" alt="arrowplace">
+                    <img id="m_arrowplace_icon" src="img/icon/arrowplace.png" alt="arrowplace">
+                    <img id="m_arrowplace_hover" src="img/icon/arrowplace_hover.png" alt="arrowplace_hover">
                     <div id="underline2" class="underline_show"></div>
                 </span>
                 <span id="intro_btn3">
-                    <img id="bag_icon" src="img/icon/bag.png" alt="bag">
-                    <img id="bag_hover" src="img/icon/bag_hover.png" alt="bag">
+                    <img id="m_bag_icon" src="img/icon/bag.png" alt="bag">
+                    <img id="m_bag_hover" src="img/icon/bag_hover.png" alt="bag_hover">
                     <div id="underline3"></div>
                 </span>
             </div>
@@ -459,13 +468,16 @@
                 <div class="fo_social">
                     <ul class="so_icon">
                         <li class="ig_a">
-                            <a href="#"><img class="ig_w" src="img/Footer/ig_logo_white.png" alt="ig_logo">
+                            <a href="#">
+                                <img class="ig_w" src="img/Footer/ig_logo_white.png" alt="ig_logo">
                                 <img class="ig_ac" src="img/Footer/ig_logo_active.png" alt="ig_active ">
                             </a>
                         </li>
                         <li class="fb_a">
-                            <a href="#"><img class="fb_w" src="img/Footer/fb_logo_white.png" alt="fb_logo">
-                                <img class="fb_ac" src="img/Footer/fb_logo_active.png" alt="fb_active"></a>
+                            <a href="#">
+                                <img class="fb_w" src="img/Footer/fb_logo_white.png" alt="fb_logo">
+                                <img class="fb_ac" src="img/Footer/fb_logo_active.png" alt="fb_active">
+                            </a>
                         </li>
                     </ul>
                 </div>

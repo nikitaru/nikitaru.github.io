@@ -1,25 +1,23 @@
 // Nav mobile
-
-window.addEventListener("load", function() {
-    setTimeout(function() {
-        window.scrollTo(0, 1);
-    }, 10);
-});
-
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
 $(document).ready(function() {
+    $('#myNav').hide();
+    $('#openNav').click(function(event) {
+        /* Act on the event */
+        $('#myNav').fadeIn(200);
+        $('body').css('overflow','hidden');
+    });
+    $('#closeNav').click(function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        ;
+        $('#myNav').fadeOut(300);
+        $('body').css('overflow','auto');
+    });
     $('.nav_so_icon').hide();
     $('a#open_contact').mouseenter(function() {
         $('.nav_so_icon').fadeToggle('slow');
     });
 });
-
 
 // Slider
 
@@ -113,14 +111,50 @@ $(document).ready(function() {
         };
     });
 });
-// SlideuP
+// Desktop Describe Box Rotate 3D
+$(document).ready(function() {
+    $('.shopicon').click(function(event) {
+        /* Act on the event */
+        // click shop
+        // icon change
+        $('#shop_icon,#arrowplace_hover,#bag_hover').css('display', 'none');
+        $('#shop_hover,#arrowplace_icon,#bag_icon').css('display', 'block');
+        // box move
+        $('#shopbox').animate({ width: "100%", opacity: "1" }, 300);
+        $('#arrowplacebox').animate({ width: "90%", opacity: "0.3" }, 200);
+        $('#bagbox').animate({ width: "90%", opacity: "0.3" }, 200);
+    });
+    $('.arrowplaceicon').click(function(event) {
+        /* Act on the event */
+        // click arrowplace
+        // icon change
+        $('#shop_hover,#arrowplace_icon,#bag_hover').css('display', 'none');
+        $('#shop_icon,#arrowplace_hover,#bag_icon').css('display', 'block');
+        // box move
+        $('#arrowplacebox').animate({ width: "100%", opacity: "1" }, 300);
+        $('#shopbox').animate({ width: "90%", opacity: "0.3" }, 200);
+        $('#bagbox').animate({ width: "90%", opacity: "0.3" }, 200);
+    });
+    $('.bagicon').click(function(event) {
+        /* Act on the event */
+        // click bag
+        // icon change
+        $('#shop_hover,#arrowplace_hover,#bag_icon').css('display', 'none');
+        $('#shop_icon,#arrowplace_icon,#bag_hover').css('display', 'block');
+        // box move
+        $('#bagbox').animate({ width: "100%", opacity: "1" }, 300);
+        $('#arrowplacebox').animate({ width: "90%", opacity: "0.3" }, 200);
+        $('#shopbox').animate({ width: "90%", opacity: "0.3" }, 200);
+    });
+});
+// Mobile Describe Box Rotate 3D
 $(document).ready(function() {
     $('#intro_btn1').click(function(event) {
         /* Act on the event */
         // click 01
         // icon change
-        $('#shop_icon,#arrowplace_hover,#bag_hover').css('display','none');
-        $('#shop_hover,#arrowplace_icon,#bag_icon').css('display','block');
+        $('#m_shop_icon,#m_arrowplace_hover,#m_bag_hover').css('display', 'none');
+        $('#m_shop_hover,#m_arrowplace_icon,#m_bag_icon').css('display', 'block');
         // icon underline show
         $('#underline1').addClass('underline_show');
         $('#underline2').removeClass('underline_show');
@@ -138,8 +172,8 @@ $(document).ready(function() {
         /* Act on the event */
         // click 02
         // icon change
-        $('#shop_hover,#arrowplace_icon,#bag_hover').css('display','none');
-        $('#shop_icon,#arrowplace_hover,#bag_icon').css('display','block');
+        $('#m_shop_hover,#m_arrowplace_icon,#m_bag_hover').css('display', 'none');
+        $('#m_shop_icon,#m_arrowplace_hover,#m_bag_icon').css('display', 'block');
         // icon underline show
         $('#underline2').addClass('underline_show');
         $('#underline1').removeClass('underline_show');
@@ -157,8 +191,8 @@ $(document).ready(function() {
         /* Act on the event */
         // click 03
         // icon change
-        $('#shop_hover,#arrowplace_hover,#bag_icon').css('display','none');
-        $('#shop_icon,#arrowplace_icon,#bag_hover').css('display','block');
+        $('#m_shop_hover,#m_arrowplace_hover,#m_bag_icon').css('display', 'none');
+        $('#m_shop_icon,#m_arrowplace_icon,#m_bag_hover').css('display', 'block');
         // icon underline show
         $('#underline3').addClass('underline_show');
         $('#underline2').removeClass('underline_show');
