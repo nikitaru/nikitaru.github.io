@@ -59,19 +59,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*color*/
 @font-face {
   font-family: "F_LIGHT";
-  src: url('../../../fonts/MuseoSans_300.svg?1479051208') format('svg'), url('../../../fonts/MuseoSans_300.ttf?1479051208') format('truetype'), url('../../../fonts/MuseoSans_300.woff?1479051208') format('woff'), url('../../../fonts/MuseoSans_300.woff2?1479051208') format('woff2'), url('../../../fonts/MuseoSans_300.eot?1479051208') format('embedded-opentype');
+  src: url('../../../fonts/MuseoSans_300.svg') format('svg'), url('../../../fonts/MuseoSans_300.ttf') format('truetype'), url('../../../fonts/MuseoSans_300.woff') format('woff'), url('../../../fonts/MuseoSans_300.woff2') format('woff2'), url('../../../fonts/MuseoSans_300.eot') format('embedded-opentype');
 }
 @font-face {
   font-family: "F_REGULAR";
-  src: url('../../../fonts/MuseoSans_500.svg?1469068858') format('svg'), url('../../../fonts/MuseoSans_500.ttf?1469068858') format('truetype'), url('../../../fonts/MuseoSans_500.woff?1469068858') format('woff'), url('../../../fonts/MuseoSans_500.woff2?1469068858') format('woff2'), url('../../../fonts/MuseoSans_500.eot?1469068858') format('embedded-opentype');
+  src: url('../../../fonts/MuseoSans_500.svg') format('svg'), url('../../../fonts/MuseoSans_500.ttf') format('truetype'), url('../../../fonts/MuseoSans_500.woff') format('woff'), url('../../../fonts/MuseoSans_500.woff2') format('woff2'), url('../../../fonts/MuseoSans_500.eot') format('embedded-opentype');
 }
 @font-face {
   font-family: "F_LIGHT_CH";
-  src: url('../../../fonts/NotoSansCJKtc-Light.otf?1434350946') format('opentype');
+  src: url('../../../fonts/NotoSansCJKtc-DemiLight.otf') format('opentype');
 }
 @font-face {
   font-family: "F_REGULAR_CH";
-  src: url('../../../fonts/NotoSansCJKtc-Medium.otf?1434350948') format('opentype');
+  src: url('../../../fonts/NotoSansCJKtc-Medium.otf') format('opentype');
 }
 * {
   box-sizing: border-box;

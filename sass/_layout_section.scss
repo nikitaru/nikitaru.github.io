@@ -1,0 +1,1330 @@
+    /*------- SECTION ------*/
+    /* // content box 01 - levooya introduce //*/
+    
+    .wrapper_levooya {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: $navbg;
+    }
+    
+    .container_levooya {
+        width: 70%;
+        height: 500px;
+        margin: auto;
+        background-color: $navbg;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        line-height: 20px;
+        @include desktop {
+            height: 550px
+        }
+        @include ipad {
+            height: 550px
+        }
+        @include mobile_lg {
+            width: 80%;
+        }
+        @include mobile_s {
+            height: 600px;
+        }
+        @include smallest {
+            height: 600px;
+        }
+    }
+    
+    .levooya_title {
+        margin-bottom: 50px;
+        @include mobile_lg {
+            margin: 10px 0;
+        }
+        @include mobile_s {
+            margin-bottom: 0;
+            font-size: 135%;
+        }
+        @include smallest {
+            margin-bottom: 0;
+        }
+    }
+    /* get access btn*/
+    
+    .access_btn,
+    .access_btn_ch {
+        width: 240px;
+        height: 50px;
+        color: white;
+        border: white 2px solid;
+        text-decoration: none;
+        font-family: "F_REGULAR";
+        font-size: 80%;
+        border-radius: 50px;
+        background-color: $main-color;
+        margin-top: 50px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        cursor: pointer;
+        @include desktop {
+            width: 210px;
+        }
+        @include ipad {
+            width: 200px;
+        }
+        @include mobile_lg {
+            width: 200px;
+            font-size: 65%;
+        }
+        @include mobile_s {
+            width: 200px;
+            font-size: 65%;
+        }
+    }
+    
+    .access_btn_ch {
+        font-family: "F_REGULAR_CH";
+        font-size: 90%;
+        letter-spacing: 2px;
+    }
+    
+    .access_btn img,
+    .access_btn_ch img {
+        display: none;
+        -webkit-transition: 0.5s ease-in;
+        transition: 0.5s ease-in;
+    }
+    
+    .access_btn:hover img,
+    .access_btn_ch:hover img {
+        display: inline-block;
+        width: 18px;
+    }
+    
+    .access_btn:hover,
+    .access_btn_ch:hover {
+        border: $main-color 2px solid;
+        background-color: white;
+        color: $main-color;
+    }
+    
+    .access_btn:hover .access_btn_p,
+    .access_btn_ch:hover .access_btn_p {
+        margin-right: 20px;
+    }
+    /*// content box 02 - product pic //*/
+    
+    .wrapper_product {
+        background-image: url('../img/Body/wave.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        -o-background-size: cover;
+        text-align: center;
+        height: 900px;
+        min-width: 100%;
+        @include smallest {
+            height: 700px;
+        }
+    }
+    /*product pic*/
+    
+    .container_product {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: relative;
+    }
+    
+    .picbox_iphone {
+        width: 330px;
+        position: absolute;
+        left: 50%;
+        margin-left: -165px;
+        top: 30px;
+        @include smallest {
+            width: 260px;
+            margin-left: -130px;
+        }
+    }
+    
+    .iphone_white {
+        width: 100%;
+        z-index: -10;
+    }
+    
+    .product_text,
+    .product_text_ch {
+        width: 100px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-left: -50px;
+        font-family: "F_LIGHT";
+        color: black;
+        font-size: 110%;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .product_text_ch {
+        font-family: "F_LIGHT_CH";
+    }
+    
+    .product_name {
+        width: 200px;
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        margin-left: -100px;
+        font-family: "F_LIGHT";
+        color: black;
+        font-size: 85%;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .product_pic {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        margin-top: -120px;
+        margin-left: -110px;
+        @include smallest {
+            width: 190px;
+            height: 190px;
+            margin-left: -95px;
+        }
+    }
+    /*// content box 03 - app title //*/
+    
+    .wrapper_app {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        bottom: 10%;
+        @include smallest {
+            bottom: 5%;
+        }
+    }
+    
+    .container_app {
+        width: 100%;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .app_title {
+        letter-spacing: 1px;
+    }
+    
+    .app_text {
+        font-size: 80%;
+        font-family: "F_REGULAR";
+        margin-top: 10px;
+    }
+    /*// content box 04 -  three icon //*/
+    
+    .icon_wrapper {
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        @include mobile_lg {
+            display: none;
+        }
+        @include mobile_s {
+            display: none;
+        }
+        @include smallest {
+            display: none;
+        }
+    }
+    
+    .icon_container {
+        width: 70%;
+        margin: 0 auto;
+        height: 230px;
+        position: relative;
+        top: -60px;
+        @include bigscreen {
+            width: 60%;
+        }
+    }
+    /* icon pic */
+    
+    .icon_picbox {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    
+    .iconpic {
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+    }
+    
+    .iconpic img {
+        width: 100%;
+    }
+    /* icon dot line */
+    
+    .dot_line {
+        width: 100%;
+        height: 20px;
+        position: relative;
+        margin: 20px 0;
+    }
+    
+    .icon_line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 20px;
+        padding: 0 55px;
+        display: inline-block;
+    }
+    
+    .dash_line {
+        width: 100%;
+        margin: 0 auto;
+        height: 12px;
+        border-bottom: dotted 4px #d6d8d8;
+        opacity: 0.6;
+    }
+    
+    .dot_container {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 20px;
+    }
+    
+    .dot_flex {
+        height: 20px;
+        padding: 0 55px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 99px;
+        background-color: $main-color;
+        border: none;
+    }
+    /* icon text */
+    
+    .icon_text {
+        width: 100%;
+        height: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    
+    .text_box,
+    .text_box_ch {
+        width: 120px;
+        /* width same with icon pic*/
+        text-align: center;
+        font-family: "F_REGULAR";
+        color: $main-color;
+    }
+    
+    .text_box_ch {
+        font-family: "F_REGULAR_CH";
+        @include bigscreen {
+            font-size: 120%;
+        }
+    }
+    /*// content box 05 - describe section //*/
+    
+    .wrapper_describe {
+        width: 100%;
+        height: 400px;
+        @include mobile_lg {
+            display: none;
+        }
+        @include mobile_s {
+            display: none;
+        }
+        @include smallest {
+            display: none;
+        }
+        .container_describe {
+            width: 80%;
+            margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            @include bigscreen {
+                width: 72%;
+            }
+            @include desktop {
+                width: 90%;
+            }
+            @include ipad {
+                width: 90%;
+            }
+            @include mobile_lg {
+                width: 90%;
+            }
+        }
+        .describe_box,
+        .describe_box_ch {
+            width: 300px;
+            height: 320px;
+            border: 0.1px #E0E0E0 solid;
+            box-shadow: 1px 1px 5px #E0E0E0;
+            font-family: "F_LIGHT";
+            @include bigscreen {
+                width: 360px;
+                height: 300px;
+            }
+            @include desktop {
+                width: 250px;
+            }
+            @include ipad {
+                width: 220px;
+            }
+            @include mobile_lg {
+                width: 140px;
+            }
+            .box_title,
+            .box_title_ch {
+                width: 100%;
+                height: 60px;
+                background-color: black;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+                font-size: 110%;
+                @include desktop {
+                    font-size: 100%;
+                }
+                @include ipad {
+                    font-size: 85%;
+                }
+                @include mobile_lg {
+                    font-size: 75%;
+                }
+            }
+            .box_title_ch {
+                letter-spacing: 3px;
+                @include bigscreen {
+                    font-size: 130%;
+                }
+            }
+            .box_content,
+            .box_content_ch {
+                width: 100%;
+                height: 180px;
+                padding: 30px 20px 0 30px;
+                text-align: left;
+                line-height: 30px;
+                color: #8E8E8E;
+                font-size: 80%;
+                letter-spacing: 0.5px;
+                @include bigscreen {
+                    font-size: 90%;
+                    height: 150px;
+                }
+                @include mobile_lg {
+                    padding: 20px 20px 0 30px;
+                }
+            }
+            .box_content_ch {
+                height: 120px;
+                text-align: center;
+                letter-spacing: 2px;
+                @include bigscreen {
+                    font-size: 90%;
+                }
+            }
+            .box_btn {
+                position: relative;
+                width: 100%;
+                .box_ac_btn,
+                .box_ac_btn_ch {
+                    margin: 0;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -120px;
+                    @include desktop {
+                        margin-left: -105px;
+                    }
+                    @include ipad {
+                        margin-left: -100px;
+                    }
+                    @include mobile_lg {
+                        margin-left: -85px;
+                    }
+                    @include mobile_s {
+                        margin-left: -100px;
+                    }
+                }
+                .box_ac_btn_ch {
+                    font-size: 85%;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .describe_box_ch {
+            height: 270px;
+            font-family: "F_LIGHT_CH";
+        }
+    }
+    /*// mobile icon section // */
+    
+    .mobile_icon_wrapper {
+        display: none;
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        @include mobile_lg {
+            display: block;
+        }
+        @include mobile_s {
+            display: block;
+        }
+        @include smallest {
+            display: block;
+        }
+    }
+    
+    .mobile_caption {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 80px
+    }
+    
+    .cap_wall {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    
+    .cap_container {
+        width: 1500px;
+        height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    
+    .cap_wall a {
+        text-decoration: none;
+        border-radius: 99%;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 200px;
+    }
+    
+    .cap_wall a img {
+        width: 100%;
+    }
+    /* content */
+    
+    .box_title,
+    .box_title_ch {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        font-family: "F_LIGHT";
+        font-size: 95%;
+    }
+    
+    .box_title_ch {
+        letter-spacing: 2px;
+    }
+    
+    .box_content,
+    .box_content_ch {
+        width: 100%;
+        height: 180px;
+        padding: 30px 20px 0 30px;
+        text-align: left;
+        line-height: 30px;
+        color: #8E8E8E;
+        font-family: "F_LIGHT";
+        font-size: 80%;
+        letter-spacing: 0.5px;
+    }
+    
+    .box_content_ch {
+        text-align: center;
+        padding: 60px 20px 0 30px;
+    }
+    
+    .box_btn {
+        position: relative;
+        width: 100%;
+    }
+    
+    .box_ac_btn,
+    .box_ac_btn_ch {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        margin-left: -108px;
+        @include mobile_lg {
+            width: 220px;
+        }
+        @include mobile_s {
+            width: 220px;
+        }
+        @include smallest {
+            width: 220px;
+        }
+    }
+    /*arrow */
+    
+    #leftarrow {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        width: 20px;
+        height: 100%;
+        z-index: 3;
+        display: none;
+        cursor: pointer;
+        img {
+            position: absolute;
+            top: 20%;
+            width: 100%;
+        }
+    }
+    
+    #rightarrow {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 20px;
+        height: 100%;
+        z-index: 3;
+        display: block;
+        cursor: pointer;
+        img {
+            position: absolute;
+            top: 20%;
+            width: 100%;
+        }
+    }
+    /* mobile line dot */
+    
+    .mobile_line_dot {
+        width: 100%;
+        height: 60px;
+        margin: 20px 0 30px 0;
+        position: relative;
+        /* line */
+        .mobile_line {
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 4px dotted grey;
+        }
+        .mobile_dot {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            .m_dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 99px;
+                background-color: grey;
+                position: absolute;
+                left: 50%;
+                margin-left: -5px;
+                top: 13px;
+            }
+        }
+    }
+    /* icon_slider */
+    
+    #mobile_slider {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .text_container {
+        width: 1000px;
+        height: 320px;
+        position: absolute;
+        left: 50%;
+        margin-left: -125px;
+    }
+    
+    #mobile_slider a {
+        position: relative;
+        text-decoration: none;
+        width: 250px;
+        height: 100%;
+        margin: 0 20px 0 0;
+        float: left;
+        background-color: #fff;
+        box-shadow: 1px 1px 8px #d0d0d0;
+    }
+    
+    .box3,
+    .box2 {
+        opacity: 0.5;
+    }
+    /*// content box 06 - introduction section //*/
+    
+    .wrapper_introduc {
+        width: 100%;
+        min-height: 100%;
+        background-color: #F5F5F5;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        @include bigscreen {
+            min-height: 900px;
+        }
+        @include desktop {
+            min-height: 800px;
+        }
+        @include ipad {
+            min-height: 800px;
+        }
+        @include mobile_lg {
+            min-height: 700px;
+        }
+        @include mobile_s {
+            display: none;
+        }
+        @include smallest {
+            display: none;
+        }
+    }
+    
+    .container_intro {
+        width: 80%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        @include bigscreen {
+            width: 72%;
+        }
+        @include desktop {
+            width: 90%;
+        }
+        @include ipad {
+            width: 90%;
+        }
+        @include mobile_lg {
+            width: 90%;
+        }
+    }
+    
+    .intro_left,
+    .intro_right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    /*left*/
+    
+    .intro_left {
+        width: 50%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        @include ipad {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
+    
+    .intro_box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 90%;
+        height: 180px;
+        background-color: #fff;
+        box-shadow: 1px 1px 75px #E0E0E0;
+        margin-bottom: 20px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    .intro_title {
+        width: 100%;
+        text-align: center;
+        font-family: "F_REGULAR";
+        color: $main-color;
+        font-size: 140%;
+        padding: 0px 40px 0 40px;
+    }
+    
+    .intro_content {
+        padding: 20px 40px 0 40px;
+        font-family: "F_LIGHT";
+        font-size: 95%;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        color: #8E8E8E;
+    }
+    
+    #shopbox,
+    #bagbox {
+        opacity: 0.3;
+    }
+    
+    #arrowplacebox {
+        width: 100%;
+    }
+    /* right */
+    
+    .intro_right {
+        width: 45%;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        @include ipad {
+            padding-left: 20px;
+        }
+    }
+    
+    .intro_right_title,
+    .intro_right_title_ch {
+        width: 100%;
+        height: 50px;
+        color: #8E8E8E;
+        font-size: 230%;
+        font-family: "F_REGULAR";
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+        text-align: left;
+        @include desktop {
+            font-size: 200%;
+            margin-bottom: 30px;
+        }
+        @include ipad {
+            font-size: 180%;
+            margin-bottom: 30px;
+        }
+        @include mobile_lg {
+            font-size: 180%;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .intro_right_title_ch {
+        font-family: "F_LIGHT_CH";
+        text-align: center;
+        letter-spacing: 5px;
+        @include bigscreen {
+            margin-bottom: 40px;
+        }
+        @include desktop {
+            margin-bottom: 40px;
+        }
+    }
+    
+    .intro_right_content,
+    .intro_right_content_ch {
+        color: #ADADAD;
+        width: 100%;
+        font-size: 130%;
+        font-family: "F_REGULAR";
+        letter-spacing: 0.5px;
+        padding-left: 3px;
+        margin-bottom: 25px;
+        text-align: left;
+        @include desktop {
+            font-size: 125%;
+            margin-bottom: 50px;
+        }
+        @include ipad {
+            font-size: 125%;
+            margin-bottom: 40px;
+        }
+        @include mobile_lg {
+            font-size: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .intro_right_content_ch {
+        letter-spacing: 3px;
+        text-align: center;
+        font-family: "F_LIGHT_CH";
+        @include bigscreen {
+            margin-bottom: 50px;
+        }
+    }
+    /*right icon*/
+    
+    .intro_right_iconbox,
+    .intro_right_iconbox_ch {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        #shop_hover,
+        #arrowplace_icon,
+        #bag_hover {
+            display: none;
+        }
+        .shopicon:hover #shop_icon {
+            display: none;
+        }
+        .shopicon:hover #shop_hover {
+            display: block;
+            cursor: pointer;
+        }
+        .bagicon:hover #bag_icon {
+            display: none;
+        }
+        .bagicon:hover #bag_hover {
+            display: block;
+            cursor: pointer;
+        }
+    }
+    
+    .intro_right_iconbox_ch {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items:center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .intro_btn,.intro_btn_ch {
+        width: 55px;
+        margin-right: 30px;
+        cursor: pointer;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+    .intro_btn_ch{
+        margin-right: 0;
+    }
+    
+    .intro_btn img,.intro_btn_ch img {
+        width: 100%;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+    /*// mobile introduction section //*/
+    
+    .mobile_wrapper_introduc {
+        display: block;
+        width: 100%;
+        height: 640px;
+        background-color: $phone-btn-color;
+        padding: 50px 0 0 0;
+        display: none;
+        @include mobile_s {
+            display: block;
+        }
+        @include smallest {
+            display: block;
+        }
+        .mobile_container_intro {
+            width: 90%;
+            margin: auto;
+            .mobile_intro_title {
+                width: 80%;
+                margin: auto;
+                font-family: "F_REGULAR";
+                font-size: 170%;
+                margin-bottom: 30px;
+                color: $text-color;
+                line-height: 30px;
+            }
+            .mobile_intro_content {
+                width: 80%;
+                margin: auto;
+                font-family: "F_LIGHT";
+                font-size: 100%;
+                margin-bottom: 30px;
+                text-align: left;
+                color: $text-color;
+                letter-spacing: 1px;
+                line-height: 18px;
+            }
+            .intro_icon {
+                width: 250px;
+                height: 100px;
+                margin: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                span {
+                    width: 60px;
+                    height: 80px;
+                    display: inline-block;
+                    @include mobile_s {
+                        cursor: pointer;
+                    }
+                    @include smallest {
+                        cursor: pointer;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+                .underline_show {
+                    margin-top: 5px;
+                    width: 70%;
+                    height: 3px;
+                    margin: auto;
+                    display: block;
+                    margin-top: 10px;
+                    background-color: $main-color;
+                    -webkit-transition: 0.3s ease;
+                    transition: 0.3s ease;
+                }
+            }
+            #m_shop_hover,
+            #m_arrowplace_icon,
+            #m_bag_hover {
+                display: none;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+            }
+        }
+    }
+    
+    .intro_text_box {
+        width: 100%;
+        height: 280px;
+        margin-top: 10px;
+        position: relative;
+        .introbox_set {
+            height: 110px;
+            margin: 30px auto;
+            position: absolute;
+            left: 50%;
+            background-color: $phone-btn-color;
+            border-radius: 5px;
+            padding: 20px 20px 0 20px;
+            box-shadow: 1px 1px 50px #d0d0d0;
+            .m_intro_title {
+                color: $main-color;
+                font-family: "F_LIGHT";
+                font-size: 100%;
+                margin-bottom: 4px;
+            }
+            .m_intro_content {
+                color: $text-color;
+                font-family: "F_LIGHT";
+                font-size: 80%;
+                line-height: 16px;
+            }
+            .active_line_show {
+                display: block;
+                width: 30px;
+                background-color: $main-color;
+                height: 3px;
+                border: none;
+                margin-bottom: 10px;
+                -webkit-transition: 0.5s ease;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+            }
+            .active_line_hide {
+                display: block;
+                width: 30px;
+                background-color: $phone-btn-color;
+                height: 3px;
+                border: none;
+                margin-bottom: 10px;
+                -webkit-transition: 0.5s ease;
+                transition: 0.5s ease;
+            }
+        }
+        .introbox_under {
+            width: 250px;
+            margin-left: -125px;
+        }
+        .introbox_up {
+            width: 280px;
+            margin-left: -140px;
+            top: 23%;
+            z-index: 2;
+        }
+        #mobile_intro_box1 {
+            top: 0%;
+        }
+        #mobile_intro_box3 {
+            top: 45%;
+        }
+    }
+    /*// content box 07 - Download //*/
+    
+    .wrapper_download {
+        width: 100%;
+        height: 550px;
+        background-color: black;
+        border-bottom: 2px white solid;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        @include mobile_s {
+            height: 650px;
+        }
+        @include smallest {
+            height: 500px;
+        }
+    }
+    
+    .download_pic01 {
+        width: 120px;
+        @include mobile_s {
+            width: 100px;
+        }
+        @include smallest {
+            width: 100px;
+        }
+    }
+    
+    .download_pic01 img {
+        width: 100%;
+    }
+    /*download title*/
+    
+    .download_title {
+        font-family: "F_LIGHT";
+        color: white;
+        text-align: center;
+        margin: 50px 0 30px 0;
+        font-size: 270%;
+        letter-spacing: 1.2px;
+        @include mobile_s {
+            font-size: 180%;
+        }
+        @include smallest {
+            font-size: 180%;
+        }
+    }
+    
+    .download_content {
+        font-size: 120%;
+        font-family: "F_LIGHT";
+        color: white;
+        letter-spacing: 0.8px;
+        text-align: center;
+        margin-bottom: 60px;
+        @include mobile_s {
+            font-size: 90%;
+        }
+        @include smallest {
+            font-size: 80%;
+        }
+    }
+    /*app store pic*/
+    
+    .app_store_icon {
+        width: 200px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50px;
+        @include mobile_s {
+            width: 170px;
+        }
+        @include smallest {
+            width: 170px;
+        }
+    }
+    
+    .app_store_icon img {
+        width: 70%;
+    }
+    
+    .app_store_icon:hover {
+        opacity: 0.9;
+    }

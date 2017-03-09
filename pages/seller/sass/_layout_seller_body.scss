@@ -1,0 +1,1611 @@
+/* sec-container */
+
+.sec-container {
+    width: 70%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @include desktop {
+        width: 80%;
+    }
+    @include ipad {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_lg {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -webkit-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+        -moz-flex-direction: column;
+    }
+    @include mobile_s {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include smallest {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+    }
+}
+
+.sec-container-en {
+    @include ipad {
+        width: 100%;
+    }
+    @include mobile_lg {
+        width: 100%;
+    }
+    @include mobile_s {
+        width: 100%;
+    }
+    @include smallest {
+        width: 100%;
+    }
+}
+
+
+/* each sec container setting */
+
+.voyager,
+.sell,
+.get-order,
+.manage-order {
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-direction: row;
+    -moz-flex-wrap: nowrap;
+}
+
+.voyager {
+    background-color: #616161;
+}
+
+.sell {
+    background-color: #B4ECE3;
+}
+
+.get-order {
+    background-color: #F5F5F5;
+}
+
+.manage-order {
+    background-color: #68E1D2;
+}
+
+
+/* each sec main text color*/
+
+.voya-t-color {
+    color: white;
+}
+
+.sell-t-color {
+    color: #4E5151;
+}
+
+.order-t-color {
+    color: $main-color;
+}
+
+.manage-t-color {
+    color: black;
+}
+
+
+/*pic-iphone*/
+
+.pic-iphone01 {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    @include bigscreen {
+        width: 250px;
+    }
+    @include desktop {
+        width: 250px;
+    }
+    @include ipad {
+        display: none;
+    }
+    @include mobile_lg {
+        display: none;
+    }
+    @include mobile_s {
+        display: none;
+    }
+    @include smallest {
+        display: none;
+    }
+}
+
+.pic-iphone01 img,
+.pic-iphone02 img {
+    width: 100%;
+}
+
+.pic-iphone02 {
+    display: none;
+    @include ipad {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 30px;
+        width: 280px;
+        margin: 0 0 20px 0;
+        display: block;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+    }
+    @include mobile_lg {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 30px;
+        width: 280px;
+        margin: 0 0 50px 0;
+        display: block;
+        -webkit-display: flex;
+        -webkit-justify-content: center;
+        -moz-display: flex;
+        -moz-justify-content: center;
+    }
+    @include mobile_s {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 30px;
+        width: 280px;
+        margin: 0 0 20px 0;
+        display: block;
+        -webkit-display: flex;
+        -webkit-justify-content: center;
+        -moz-display: flex;
+        -moz-justify-content: center;
+    }
+    @include smallest {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 30px;
+        width: 220px;
+        margin: 0 0 40px 0;
+        display: block;
+        -webkit-display: flex;
+        -webkit-justify-content: center;
+        -moz-display: flex;
+        -moz-justify-content: center;
+    }
+}
+
+
+/*text-box*/
+
+.text-box01,
+.text-box02 {
+    width: 492px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-direction: column;
+    @include bigscreen {
+        width: 850px;
+    }
+    @include desktop {
+        width: 400px;
+        padding: 0;
+        margin: 0;
+    }
+    @include ipad {
+        width: auto;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+        margin: 50px 0 40px 0;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_lg {
+        width: auto;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 0;
+        margin: 50px 0 40px 0;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_s {
+        width: auto;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+        margin: 20px 0 40px 0;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include smallest {
+        width: auto;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+        margin: 40px 0 40px 0;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+}
+
+.text-box01 {
+    padding-left: 150px;
+    @include bigscreen {
+        padding-left: 230px;
+    }
+    @include desktop {
+        padding-left: 85px;
+    }
+    @include ipad {
+        padding: 0;
+    }
+    @include mobile_lg {
+        padding: 0;
+    }
+    @include mobile_s {
+        padding: 0;
+    }
+    @include smallest {
+        padding: 0;
+    }
+}
+
+.text-box02 {
+    @include bigscreen {
+        padding-left: 30px;
+        margin-right: 0px;
+    }
+    @include desktop {
+        padding-left: 20px;
+    }
+}
+
+
+/* text box english ver */
+
+.text-box01-en {
+    padding-left: 130px;
+    width: 700px;
+    @include ipad {
+        padding: 0;
+    }
+    @include mobile_lg {
+        padding: 0;
+    }
+    @include mobile_s {
+        padding: 0;
+    }
+    @include smallest {
+        padding: 0;
+    }
+}
+
+.text-box02-en {
+    padding-left: 0px;
+    @include ipad {
+        padding: 0;
+    }
+    @include mobile_lg {
+        padding: 0;
+    }
+    @include mobile_s {
+        padding: 0;
+    }
+    @include smallest {
+        padding: 0;
+    }
+}
+
+
+/* 內文 設定 */
+
+.t-01 {
+    margin-bottom: 30px;
+    @include ipad {
+        margin-bottom: 20px;
+    }
+    @include mobile_lg {
+        margin-bottom: 20px;
+    }
+    @include mobile_s {
+        margin-bottom: 20px;
+    }
+    @include smallest {
+        margin-bottom: 15px;
+    }
+}
+
+.t-02 {
+    line-height: 37px;
+    @include bigscreen {
+        line-height: 45px;
+    }
+    @include desktop {
+        line-height: 30px;
+    }
+}
+
+.p-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    @include ipad {
+        line-height: 25px;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_lg {
+        line-height: 25px;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_s {
+        line-height: 25px;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include smallest {
+        line-height: 22px;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+}
+
+.p-flex-ch {
+    font-family: "F_LIGHT_CH";
+}
+
+.p-flex-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    -moz-flex-wrap: wrap;
+    @include bigscreen {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+    }
+    @include desktop {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+    }
+    @include ipad {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_lg {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_s {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include smallest {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -moz-flex-wrap: nowrap;
+        -moz-flex-direction: column;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+}
+
+
+/* hr */
+
+.hr01,
+.hr02,
+.hr03,
+.hr04 {
+    display: inline-block;
+    width: 180px;
+    height: 3px;
+    border: none;
+    float: left;
+    @include ipad {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        border: none;
+        float: left;
+    }
+    @include mobile_lg {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        border: none;
+        float: left;
+    }
+    @include mobile_s {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        border: none;
+        float: left;
+    }
+    @include smallest {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        border: none;
+        float: left;
+    }
+}
+
+.hr01 {
+    background-color: white;
+}
+
+.hr02 {
+    background-color: #4E5151;
+}
+
+.hr03 {
+    background-color: $main-color;
+}
+
+.hr04 {
+    background-color: black;
+}
+
+
+/****** SLOGAN ******/
+
+.slogan {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "F_LIGHT";
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+}
+
+.slo-container {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: white;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-direction: column;
+}
+
+.slo-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-direction: row;
+}
+
+.slo-title {
+    font-size: 230%;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 30px;
+    @include ipad {
+        font-size: 200%;
+    }
+    @include mobile_lg {
+        font-size: 150%;
+    }
+    @include mobile_s {
+        font-size: 160%;
+    }
+    @include smallest {
+        font-size: 130%;
+        letter-spacing: 4px;
+    }
+}
+
+.slo-title-en {
+    @include mobile_lg {
+        font-size: 150%;
+        letter-spacing: 2px;
+    }
+    @include mobile_s {
+        font-size: 140%;
+    }
+    @include smallest {
+        font-size: 130%;
+        letter-spacing: 4px;
+    }
+}
+
+.slo-title-ch {
+    font-family: "F_REGULAR_CH";
+}
+
+.slo-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    width: 45px;
+    margin-left: 10px;
+    @include ipad {
+        width: 40px;
+    }
+    @include mobile_lg {
+        width: 30px;
+    }
+    @include mobile_s {
+        width: 30px;
+    }
+    @include smallest {
+        width: 30px;
+    }
+}
+
+.slo-pic img {
+    width: 100%;
+}
+
+.slo-down {
+    font-size: 120%;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    @include ipad {
+        font-size: 100%;
+    }
+    @include mobile_lg {
+        font-size: 100%;
+    }
+    @include mobile_s {
+        font-size: 90%;
+    }
+    @include smallest {
+        font-size: 80%;
+    }
+}
+
+.slo-down-ch {
+    font-family: "F_LIGHT_CH";
+}
+
+
+/****** Join ******/
+
+.join {
+    min-height: 500px;
+    min-width: 100%;
+    background-color: #F5F5F5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    @include mobile_s {
+        min-height: 600px;
+    }
+    @include smallest {
+        min-height: 600px;
+    }
+}
+
+.jo-container {
+    width: 80%;
+    min-height: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 200%;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    display: -moz-flex;
+    -moz-justify-content: space-around;
+    -moz-align-items: center;
+    -moz-flex-direction: row;
+    -moz-flex-wrap: wrap;
+    @include ipad {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-flex-direction: column;
+        -moz-flex-wrap: nowrap;
+    }
+    @include mobile_lg {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-flex-direction: column;
+        -moz-flex-wrap: nowrap;
+    }
+    @include mobile_s {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-flex-direction: column;
+        -moz-flex-wrap: nowrap;
+    }
+    @include smallest {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        -moz-justify-content: center;
+        -moz-flex-direction: column;
+        -moz-flex-wrap: nowrap;
+    }
+}
+
+
+/*join Left*/
+
+.jo-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-grid-column-align: center;
+    justify-items: center;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-direction: column;
+    @include ipad {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-grid-column-align: center;
+        justify-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-items: center;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+    }
+    @include mobile_lg {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-grid-column-align: center;
+        justify-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-items: center;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-align-items: center;
+        -moz-justify-items: center;
+        -moz-flex-direction: column;
+    }
+    @include mobile_s {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-grid-column-align: center;
+        justify-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-items: center;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-align-items: center;
+        -moz-justify-items: center;
+        -moz-flex-direction: column;
+    }
+    @include smallest {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-grid-column-align: center;
+        justify-items: center;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-items: center;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-align-items: center;
+        -moz-justify-items: center;
+        -moz-flex-direction: column;
+    }
+}
+
+.jo-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -moz-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    @include ipad {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-display: flex;
+        -webkit-flex-direction: column;
+        -moz-display: flex;
+        -moz-flex-direction: column;
+    }
+    @include mobile_lg {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-flex-direction: column;
+    }
+    @include mobile_s {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-flex-direction: column;
+    }
+    @include smallest {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        display: -moz-flex;
+        -moz-flex-direction: column;
+    }
+}
+
+.jo-t01 {
+    margin-bottom: 30px;
+    font-size: 100%;
+    letter-spacing: 2px;
+    font-family: "F_LIGHT";
+    @include ipad {
+        font-size: 120%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        display: -moz-flex;
+    }
+    @include mobile_lg {
+        font-size: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include mobile_s {
+        font-size: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+    @include smallest {
+        font-size: 75%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        -moz-align-items: center;
+    }
+}
+
+.jo-t01-en {
+    @include mobile_lg {
+        font-size: 90%;
+    }
+    @include mobile_s {
+        font-size: 80%;
+    }
+}
+
+.jo-t02 {
+    margin-bottom: 30px;
+    font-size: 60%;
+    letter-spacing: 1px;
+    font-family: "F_LIGHT";
+    @include ipad {
+        margin-bottom: 70px;
+        font-size: 60%;
+    }
+    @include mobile_lg {
+        margin-bottom: 40px;
+        font-size: 40%;
+    }
+    @include mobile_s {
+        margin-bottom: 40px;
+        font-size: 45%;
+    }
+    @include smallest {
+        margin-bottom: 40px;
+        font-size: 30%;
+    }
+}
+
+.jo-t02-en {
+    @include ipad {
+        text-align: center;
+        line-height: 30px;
+    }
+    @include mobile_lg {
+        text-align: center;
+        line-height: 30px;
+    }
+    @include mobile_s {
+        text-align: center;
+        line-height: 30px;
+    }
+    @include smallest {
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.jo-t02-ch {
+    letter-spacing: 3px;
+    @include smallest {
+        letter-spacing: 2px;
+    }
+}
+
+.jo-t01-ch,
+.jo-t02-ch,
+.jo-t03-ch {
+    font-family: "F_LIGHT_CH";
+}
+
+
+/*join Right*/
+
+.jo-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    display: -moz-flex;
+    -moz-flex-direction: column;
+    -moz-flex-wrap: nowrap;
+}
+
+.jo-t03 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 80%;
+    letter-spacing: 4px;
+    font-family: "F_LIGHT";
+    @include smallest {
+        font-size: 60%
+    }
+}
+
+.jo-t03-en {
+    letter-spacing: 1px;
+}
+
+.join-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    font-family: "F_LIGHT";
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+    display: -moz-flex;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -moz-flex-direction: column;
+}
+
+
+/*mail img*/
+
+.mail-pic01,
+.mail-pic02 {
+    width: 35px;
+}
+
+.mail-pic02 {
+    margin-right: 20px;
+    @include ipad {
+        display: none;
+    }
+    @include mobile_lg {
+        display: none;
+    }
+    @include mobile_s {
+        display: none;
+    }
+    @include smallest {
+        display: none;
+    }
+}
+
+.mail-pic01 {
+    display: none;
+    margin-bottom: 25px;
+    @include ipad {
+        display: block;
+        margin: 35px 0 30px 0;
+    }
+    @include mobile_lg {
+        display: block;
+        margin: 35px 0 25px 0;
+    }
+    @include mobile_s {
+        display: block;
+        margin-bottom: 25px;
+    }
+    @include smallest {
+        display: block;
+        margin-bottom: 25px;
+    }
+}
+
+
+/*input*/
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+    width: 300px;
+    height: 50px;
+    padding: 12px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: #E0E0E0 2px solid;
+    background-color: white;
+    font-size: 50%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "F_LIGHT", "F_LIGHT_CH";
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    @include ipad {
+        width: 380px;
+        font-size: 50%;
+        margin: 20px 0;
+    }
+    @include mobile_lg {
+        width: 300px;
+        height: 45px;
+        font-size: 45%;
+        margin: 10px 0;
+    }
+    @include smallest {
+        width: 300px;
+        height: 45px;
+        font-size: 40%;
+        margin-bottom: 0px;
+    }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #D3D4D6;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #D3D4D6;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #D3D4D6;
+}
+
+.form-btn {
+    position: relative;
+    margin: 0 auto;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+    outline: none;
+    border: $main-color 2px solid;
+}
+
+input[type=submit] {
+    font-family: "F_LIGHT", "F_LIGHT_CH";
+    width: 150px;
+    height: 40px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 50%;
+    margin-top: 20px;
+    border: none;
+    letter-spacing: 5px;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    @include ipad {
+        margin: 20px 0 30px 0;
+        width: 150px;
+        height: 50px;
+        font-size: 55%;
+    }
+    @include mobile_lg {
+        margin: 10px 0 30px 0;
+        width: 120px;
+        height: 30px;
+        font-size: 45%;
+    }
+    @include smallest {
+        width: 120px;
+        height: 30px;
+    }
+}
+
+input[type=submit]:hover {
+    background-color: #3C3C3C;
+    cursor: pointer;
+}

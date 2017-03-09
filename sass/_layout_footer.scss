@@ -1,0 +1,291 @@
+/*//  Footer //*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 15px;
+    @include ipad {
+        height: 150px;
+    }
+    @include mobile_lg {
+        height: 150px;
+    }
+    @include mobile_s {
+        height: 150px;
+    }
+    @include smallest {
+        height: 150px;
+    }
+    .wrapper_foo {
+        width: 90%;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        font-family: F_LIGHT;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        @include desktop {
+            width: 100%;
+        }
+        @include ipad {
+            flex-direction: column;
+        }
+        @include mobile_lg {
+            flex-direction: column;
+        }
+        @include mobile_s {
+            flex-direction: column;
+        }
+        @include smallest {
+            flex-direction: column;
+        }
+        /* left */
+        .fo_left {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            @include ipad {
+                flex-direction: column;
+            }
+            @include mobile_lg {
+                flex-direction: column;
+                justify-content: center;
+            }
+            @include mobile_s {
+                justify-content: center;
+            }
+            @include smallest {
+                justify-content: center;
+            }
+            .fo_logo {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                justify-content: end;
+                display: -webkit-flex;
+                -webkit-justify-content: flex-end;
+                -webkit-align-items: center;
+                padding: 0 30px 0 0;
+                @include ipad {
+                    justify-content: center;
+                    padding: 0;
+                    margin: 5px 0;
+                }
+                @include mobile_lg {
+                    justify-content: center;
+                    padding: 0;
+                    margin: 5px 0;
+                }
+                @include mobile_s {
+                    justify-content: center;
+                    padding: 0;
+                }
+                @include smallest {
+                    justify-content: center;
+                    padding: 0;
+                }
+            }
+            .fo_logo img {
+                width: 35%;
+            }
+            .fo_t01,
+            .fo_t02 {
+                font-size: 70%;
+                color: white;
+                letter-spacing: 1.3px;
+                margin-right: 20px;
+                @include ipad {
+                    margin: 5px 0;
+                }
+                @include mobile_lg {
+                    margin: 5px 0;
+                }
+                @include mobile_s {
+                    margin: 10px 0px 0 0;
+                }
+                @include smallest {
+                    margin: 10px 0px 0 0;
+                }
+            }
+        }
+        /* right */
+        .fo_right {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-right: 70px;
+            display: -webkit-flex;
+            -webkit-justify-content: center;
+            -webkit-align-items: center;
+            -webkit-flex-direction: row;
+            @include ipad {
+                margin-right: 0;
+            }
+            @include mobile_lg {
+                margin-right: 0;
+            }
+            @include mobile_s {
+                margin-right: 0;
+            }
+            @include smallest {
+                margin-right: 0;
+            }
+            .fo_social {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                /* fo_img*/
+                /* img link setting */
+                .so_icon {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    display: -webkit-flex;
+                    -webkit-flex-direction: row;
+                    display: -moz-flex;
+                    -moz-flex-direction: row;
+                    @include ipad {
+                        margin: 10px 0 0 10px;
+                    }
+                    @include mobile_lg {
+                        margin: 10px 0 0 10px;
+                    }
+                    @include mobile_s {
+                        margin: 10px 0 0 10px;
+                    }
+                    @include smallest {
+                        margin: 10px 0 0 10px;
+                    }
+                    .ig_a a,
+                    .fb_a a {
+                        width: 38px;
+                        height: 38px;
+                        border-radius: 99%;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        margin-right: 20px;
+                        transition: 0.2s ease-in-out;
+                        -webkit-transition: 0.2s ease-in-out;
+                        display: -webkit-flex;
+                        -webkit-justify-content: center;
+                        -webkit-align-items: center;
+                        -webkit-flex-direction: row;
+                        display: -moz-flex;
+                        -moz-justify-content: center;
+                        -moz-align-items: center;
+                        -moz-flex-direction: row;
+                    }
+                    .ig_w {
+                        display: block;
+                        width: 20px;
+                    }
+                    .fb_w {
+                        display: block;
+                        width: 11px;
+                    }
+                    .ig_ac,
+                    .fb_ac {
+                        display: none;
+                    }
+                    .ig_a a:hover .ig_w {
+                        display: none;
+                    }
+                    .ig_a a:hover .ig_ac {
+                        display: block;
+                        width: 20px;
+                    }
+                    .ig_a a:hover {
+                        background-color: white;
+                    }
+                    .fb_a a:hover .fb_w {
+                        display: none;
+                    }
+                    .fb_a a:hover .fb_ac {
+                        display: block;
+                        width: 11px;
+                    }
+                    .fb_a a:hover {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
