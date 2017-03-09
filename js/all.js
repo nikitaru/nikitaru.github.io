@@ -57,7 +57,7 @@ $(function() {
 
 //icon slider
 $(document).ready(function() {
-    $('.text_container').css('margin-left', '-215px');
+
     var currentBox = 1;
     var animationSpeed = 800;
     var moveLength;
@@ -70,34 +70,46 @@ $(document).ready(function() {
     $('#rightarrow').click(function(event) {
         /* Act on the event */
         //text
-        if (currentBox < $boxLength && currentBox != ($boxLength - 2)) {
+        if (currentBox < $boxLength && currentBox != $boxLength - 1) {
             moveLength = '-=270px';
             iconMoveLength = '-=297px';
             currentBox++;
             $('.box' + currentBox).css('opacity', '1');
             $('.box' + (currentBox + 1)).css('opacity', '0.5');
             $('.box' + (currentBox - 1)).css('opacity', '0.5');
+            $('#leftarrow').fadeIn(2000);
             $textSlide.animate({ marginLeft: moveLength }, animationSpeed);
             $iconSlide.animate({ marginLeft: iconMoveLength }, animationSpeed);
         } else {
-            currentBox = 1;
-            moveLength = -215;
-            iconMoveLength = 0;
-            $textSlide.animate({ marginLeft: moveLength }, animationSpeed, function() {
-                $('.box' + currentBox).css('opacity', '1');
-                $('.box' + (currentBox + 1)).css('opacity', '0.5');
-                $('.box' + ($boxLength - 2)).css('opacity', '0.5');
-            });
+            currentBox++;
+            $('#rightarrow').fadeOut(1000);
+            $('.box' + currentBox).css('opacity', '1');
+            $('.box' + (currentBox - 1)).css('opacity', '0.5');
+            $textSlide.animate({ marginLeft: moveLength }, animationSpeed);
             $iconSlide.animate({ marginLeft: iconMoveLength }, animationSpeed);
-        };
+
+        }
     });
     // left  click
     $('#leftarrow').click(function(event) {
         /* Act on the event */
         //text
-        if (currentBox <= ($boxLength - 2) && currentBox > 1) {
+        if (currentBox <= $boxLength && currentBox > 2) {
             moveLength = '+=270px';
             iconMoveLength = '+=297px';
+            currentBox--;
+            $('#rightarrow').fadeIn(2000);
+            $('.box' + currentBox).css('opacity', '1');
+            $('.box' + (currentBox + 1)).css('opacity', '0.5');
+            $('.box' + (currentBox - 1)).css('opacity', '0.5');
+
+            $textSlide.animate({ marginLeft: moveLength }, animationSpeed);
+            $iconSlide.animate({ marginLeft: iconMoveLength }, animationSpeed);
+        }else {
+            currentBox = 2 ;
+            moveLength = '+=270px';
+            iconMoveLength = '+=297px';
+            $('#leftarrow').fadeOut(1000);
             currentBox--;
             $('.box' + currentBox).css('opacity', '1');
             $('.box' + (currentBox + 1)).css('opacity', '0.5');
@@ -105,16 +117,7 @@ $(document).ready(function() {
 
             $textSlide.animate({ marginLeft: moveLength }, animationSpeed);
             $iconSlide.animate({ marginLeft: iconMoveLength }, animationSpeed);
-        } else {
-            currentBox = 1;
-            moveLength = -215;
-            iconMoveLength = 0;
-            $('.box' + currentBox).css('opacity', '1');
-            $('.box' + (currentBox + 1)).css('opacity', '0.5');
-            $('.box' + ($boxLength - 2)).css('opacity', '0.5');
-            $textSlide.animate({ marginLeft: moveLength }, animationSpeed);
-            $iconSlide.animate({ marginLeft: iconMoveLength }, animationSpeed);
-        };
+        }
     });
 });
 // Desktop Describe Box Rotate 3D

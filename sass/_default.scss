@@ -6,10 +6,10 @@ $navbg: #ffffff;
 $phone-btn-color: #f5f5f5;
 $text-color: #7B7B7B;
 
-/*font*/
-
-@include font-face("F_LIGHT", font-files("MuseoSans_500.svg", "MuseoSans_300.ttf", "MuseoSans_300.woff", "MuseoSans_300.woff2", "MuseoSans_300.eot"));
+@include font-face("F_LIGHT", font-files("MuseoSans_300.svg", "MuseoSans_300.ttf", "MuseoSans_300.woff", "MuseoSans_300.woff2", "MuseoSans_300.eot"));
 @include font-face("F_REGULAR", font-files("MuseoSans_500.svg", "MuseoSans_500.ttf", "MuseoSans_500.woff", "MuseoSans_500.woff2", "MuseoSans_500.eot"));
+@include font-face("F_LIGHT_CH", font-files("NotoSansCJKtc-Light.otf"));
+@include font-face("F_REGULAR_CH", font-files("NotoSansCJKtc-Medium.otf"));
 * {
     box-sizing: border-box;
 }
