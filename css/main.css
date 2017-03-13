@@ -66,11 +66,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "F_LIGHT_CH";
-  src: url('../fonts/NotoSansCJKtc-DemiLight.otf?1434350946') format('opentype');
+  src: url('../fonts/NotoSansCJKtc-REGULAR.otf?1434350948') format('opentype');
 }
 @font-face {
   font-family: "F_REGULAR_CH";
-  src: url('../fonts/NotoSansCJKtc-Medium.otf?1434350948') format('opentype');
+  src: url('../fonts/NotoSansCJKtc-MEDIUM.otf?1434350948') format('opentype');
 }
 * {
   box-sizing: border-box;
@@ -249,32 +249,6 @@ p {
 @media (max-width: 399px) {
   .p_ch {
     text-align: left;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-  p:first-letter {
-    font-size: 120%;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  p:first-letter {
-    font-size: 140%;
-  }
-}
-@media (min-width: 415px) and (max-width: 766px) {
-  p:first-letter {
-    font-size: 140%;
-  }
-}
-@media (min-width: 400px) and (max-width: 414px) {
-  p:first-letter {
-    font-size: 140%;
-  }
-}
-@media (max-width: 399px) {
-  p:first-letter {
-    font-size: 140%;
   }
 }
 
@@ -1244,11 +1218,13 @@ p {
 }
 @media (min-width: 400px) and (max-width: 414px) {
   .container_levooya {
+    width: 80%;
     height: 600px;
   }
 }
 @media (max-width: 399px) {
   .container_levooya {
+    width: 80%;
     height: 600px;
   }
 }
@@ -1319,14 +1295,14 @@ p {
   .access_btn,
   .access_btn_ch {
     width: 200px;
-    font-size: 65%;
+    font-size: 85%;
   }
 }
 @media (min-width: 400px) and (max-width: 414px) {
   .access_btn,
   .access_btn_ch {
     width: 200px;
-    font-size: 65%;
+    font-size: 85%;
   }
 }
 
@@ -1818,6 +1794,24 @@ p {
   letter-spacing: 2px;
 }
 @media (min-width: 1880px) {
+  .wrapper_describe .describe_box .box_content_ch,
+  .wrapper_describe .describe_box_ch .box_content_ch {
+    font-size: 90%;
+  }
+}
+@media (min-width: 415px) and (max-width: 766px) {
+  .wrapper_describe .describe_box .box_content_ch,
+  .wrapper_describe .describe_box_ch .box_content_ch {
+    font-size: 90%;
+  }
+}
+@media (min-width: 400px) and (max-width: 414px) {
+  .wrapper_describe .describe_box .box_content_ch,
+  .wrapper_describe .describe_box_ch .box_content_ch {
+    font-size: 90%;
+  }
+}
+@media (max-width: 399px) {
   .wrapper_describe .describe_box .box_content_ch,
   .wrapper_describe .describe_box_ch .box_content_ch {
     font-size: 90%;
@@ -2452,7 +2446,8 @@ p {
   margin-top: 5px;
 }
 
-.intro_btn, .intro_btn_ch {
+.intro_btn,
+.intro_btn_ch {
   width: 55px;
   margin-right: 30px;
   cursor: pointer;
@@ -2464,7 +2459,8 @@ p {
   margin-right: 0;
 }
 
-.intro_btn img, .intro_btn_ch img {
+.intro_btn img,
+.intro_btn_ch img {
   width: 100%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
