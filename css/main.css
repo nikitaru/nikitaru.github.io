@@ -1684,7 +1684,7 @@ p {
   height: 320px;
   border: 0.1px #E0E0E0 solid;
   box-shadow: 1px 1px 5px #E0E0E0;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH";
 }
 @media (min-width: 1880px) {
   .wrapper_describe .describe_box,
@@ -1749,6 +1749,7 @@ p {
 }
 .wrapper_describe .describe_box .box_title_ch,
 .wrapper_describe .describe_box_ch .box_title_ch {
+  font-family: "F_LIGHT_CH";
   letter-spacing: 3px;
 }
 @media (min-width: 1880px) {
@@ -1789,6 +1790,7 @@ p {
 }
 .wrapper_describe .describe_box .box_content_ch,
 .wrapper_describe .describe_box_ch .box_content_ch {
+  font-family: "F_LIGHT_CH";
   height: 120px;
   text-align: center;
   letter-spacing: 2px;
@@ -1870,7 +1872,6 @@ p {
 }
 .wrapper_describe .describe_box_ch {
   height: 270px;
-  font-family: "F_LIGHT_CH";
 }
 
 /*// mobile icon section // */
