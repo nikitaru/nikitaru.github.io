@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1790,7 +1791,6 @@ p {
 }
 .wrapper_describe .describe_box .box_content_ch,
 .wrapper_describe .describe_box_ch .box_content_ch {
-  font-family: "F_LIGHT_CH";
   height: 120px;
   text-align: center;
   letter-spacing: 2px;
