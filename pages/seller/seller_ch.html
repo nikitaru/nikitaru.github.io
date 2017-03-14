@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+<meta name="description" content="Levooya -> Travel & Sell !">
+<meta name="keywords" content="travel,sell,levooya,app,ios">
+<meta name="author" content="Nikita Lyu">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<title>成為旅行者</title>
+<link rel="stylesheet" href="css/seller_main.css">
+<script src="../../js/jquery.js"></script>
+<script src="../../js/all_min.js"></script>
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <meta name="description" content="Levooya -> Travel & Sell !">
-    <meta name="keywords" content="travel,sell,levooya,app,ios">
-    <meta name="author" content="Nikita Lyu">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>成為旅行者</title>
-    <link rel="stylesheet" href="css/seller_main.css">
-    <script src="../../js/jquery.js"></script>
-    <script src="../../js/all.js"></script>
+ga('create', 'UA-93537191-1', 'auto');
+ga('send', 'pageview');
+</script>
 </head>
 
 <body>
-    <!-- NAV -->
-    <!-- NAV Desktop-->
     <!-- Navigation -->
-    <nav class="main_nav main_nav_ch">
+    <nav class="nav_wrapper_ch">
         <div class="nav_container">
-            <div class="logo">
-                <a href="../../index.html"><img src="../../img/Nav_Desktop/Levooya_bk.png" alt="logo_image" class="logo_pic l_p01">
-                    <img src="../../img/Nav_Desktop/Levooya_bk02.png" alt="logo_image_hover" class="logo_pic l_p02">
+            <div class="nav_container--logo">
+                <a href="../../index.html"><img src="../../img/Nav_Desktop/Levooya_bk.png" alt="logo_image" class="nav--logo-img nav--logo1">
+                    <img src="../../img/Nav_Desktop/Levooya_bk02.png" alt="logo_image_hover" class="nav--logo-img nav--logo2">
                 </a>
             </div>
-            <ul class="menu">
+            <ul class="nav_container--menu">
                 <li class="m_btn"><a href="#">關於我們</a></li>
-                <li class="m_btn"><a href="seller_en.html">成為旅行者</a></li>
+                <li class="m_btn"><a href="seller_ch.html">成為旅行者</a></li>
                 <li class="m_btn"><a href="#">立即下載</a></li>
                 <li class="m_btn"><a href="#">部落格</a></li>
                 <li class="m_btn"><a href="../help_center/help_ch.html">幫助中心</a></li>
-                <li class="m_btn"><a href="seller_en.html">EN</a>&nbsp;|&nbsp;<a href="pages/seller/seller_ch.html">&nbsp;中文</a></li>
+                <li class="m_btn"><a href="seller_en.html">EN</a>&nbsp;|&nbsp;<a href="seller_ch.html">&nbsp;中文</a></li>
             </ul>
             <div class="nav_contact_container">
                 <ul class="nav_so_icon">
@@ -40,7 +53,7 @@
                         <a href="#"><img src="../../img/Nav_Desktop/ig_icon.png" alt="instagram"></a>
                     </li>
                     <li class="fb_icon">
-                        <a href="https://www.facebook.com/levooya/?ref=ts&fref=ts"><img src="../../img/Nav_Desktop/fb_icon.png" alt="facebook"></a>
+                        <a href="https://www.facebook.com/levooya/?fref=ts"><img src="../../img/Nav_Desktop/fb_icon.png" alt="facebook"></a>
                     </li>
                 </ul>
                 <a href="#" class="nav_contact nav_contact_ch" id="open_contact">聯絡我們</a>
@@ -54,9 +67,9 @@
     <nav id="myNav" class="overlay">
         <a href="#" class="closebtn" id="closeNav">&times;</a>
         <div class="overlay_content">
-            <ul class="phone_menu phone_menu_ch">
+            <ul class="phone_menu">
                 <li class="phone_btn"><a href="＃">關於我們</a></li>
-                <li class="phone_btn"><a href="seller_en.html">成為旅行者</a></li>
+                <li class="phone_btn"><a href="seller_ch.html">成為旅行者</a></li>
                 <li class="phone_btn"><a href="#">立即下載</a></li>
                 <li class="phone_btn"><a href="#">部落格</a></li>
                 <li class="phone_btn"><a href="../help_center/help_ch.html">幫助中心</a></li>
@@ -83,7 +96,7 @@
                         </a>
                     </li>
                     <li class="p_fb_icon">
-                        <a href="https://www.facebook.com/levooya/?ref=ts&fref=ts">
+                        <a href="https://www.facebook.com/levooya/?fref=ts">
                             <img src="../../img/Nav_phone/fb_logo_white.png" class="p_fb01" alt="facebook_white">
                             <img src="../../img/Nav_phone/fb_logo_hover.png" class="p_fb02" alt="facebook_green">
                         </a>
@@ -96,24 +109,24 @@
     <header>
         <div class="h-container">
             <div class="row01">
-                <div class="h-t01">
-                    The <span class="h-title-color">Seller Page</span>
+                <div class="h-t01 h-t01_ch">
+                    加入<span class="h-title-color">&nbsp;Levooya</span>
                 </div>
-                <div class="h-t02">
-                    Title Goes Here
+                <div class="h-t02 h-t02_ch">
+                    成為旅行者
                 </div>
             </div>
             <div class="row02">
                 <span class="p-t01">
-                    You can build anything&nbsp;,&nbsp;
+                    世界寶物等你來發掘&nbsp;,&nbsp;
                 </span>
                 <span class="p-t02">
-                    with over 150 elements.&nbsp;And you'll enjoy it.
+                    為你的旅行賺取額外旅費！
                 </span>
             </div>
             <div class="row03">
                 <div class="join-btn join-btn-ch">
-                    <a href="#">成為旅行者</a>
+                    <a href="#">立即成為旅行者</a>
                 </div>
             </div>
         </div>
@@ -211,7 +224,7 @@
     <div class="sec-container">
         <div class="text-box02 manage-t-color">
             <div class="t-01">
-                <h3>發表想法開始販售</h3>
+                <h3 class="h3_ch">發表想法開始販售</h3>
             </div>
             <div class="t-01">
                 <hr class="hr02">

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".plus_btn").click(function(n){$(this).parent().find(".minus_btn").show(),$(this).parent().toggleClass("question--active"),$(this).parent().parent().find(".answer").slideToggle(500)})});

@@ -227,7 +227,8 @@ p {
 }
 
 /* The navigation bar */
-.main_nav, .main_nav_ch {
+.nav_wrapper,
+.nav_wrapper_ch {
   width: 100%;
   height: 55px;
   background-color: #fff;
@@ -245,16 +246,19 @@ p {
   /*moblie nav*/
 }
 @media (min-width: 1880px) {
-  .main_nav, .main_nav_ch {
+  .nav_wrapper,
+  .nav_wrapper_ch {
     height: 65px;
   }
 }
 @media (min-width: 415px) and (max-width: 766px) {
-  .main_nav, .main_nav_ch {
+  .nav_wrapper,
+  .nav_wrapper_ch {
     height: 45px;
   }
 }
-.main_nav .nav_container, .main_nav_ch .nav_container {
+.nav_wrapper .nav_container,
+.nav_wrapper_ch .nav_container {
   width: 90%;
   margin: auto;
   height: 55px;
@@ -272,11 +276,13 @@ p {
   -webkit-align-items: center;
 }
 @media (min-width: 1880px) {
-  .main_nav .nav_container, .main_nav_ch .nav_container {
+  .nav_wrapper .nav_container,
+  .nav_wrapper_ch .nav_container {
     height: 65px;
   }
 }
-.main_nav .logo, .main_nav_ch .logo {
+.nav_wrapper .nav_container--logo,
+.nav_wrapper_ch .nav_container--logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,31 +297,39 @@ p {
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
-.main_nav .logo .logo_pic, .main_nav_ch .logo .logo_pic {
+.nav_wrapper .nav_container--logo .nav--logo-img,
+.nav_wrapper_ch .nav_container--logo .nav--logo-img {
   width: 100%;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
 }
-.main_nav .logo .l_p02, .main_nav_ch .logo .l_p02 {
+.nav_wrapper .nav_container--logo .nav--logo2,
+.nav_wrapper_ch .nav_container--logo .nav--logo2 {
   display: none;
 }
-.main_nav .logo a, .main_nav_ch .logo a {
+.nav_wrapper .nav_container--logo a,
+.nav_wrapper_ch .nav_container--logo a {
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
 }
-.main_nav .logo a:hover, .main_nav_ch .logo a:hover {
+.nav_wrapper .nav_container--logo a :hover,
+.nav_wrapper_ch .nav_container--logo a :hover {
   opacity: 0.7;
 }
-.main_nav .logo a:hover .l_p01, .main_nav_ch .logo a:hover .l_p01 {
+.nav_wrapper .nav_container--logo a :hover .nav--logo1,
+.nav_wrapper_ch .nav_container--logo a :hover .nav--logo1 {
   display: none;
 }
-.main_nav .logo a:hover .l_p02, .main_nav_ch .logo a:hover .l_p02 {
+.nav_wrapper .nav_container--logo a :hover .nav--logo2,
+.nav_wrapper_ch .nav_container--logo a :hover .nav--logo2 {
   display: inline-block;
 }
-.main_nav .logo a:active, .main_nav_ch .logo a:active {
+.nav_wrapper .nav_container--logo a :active,
+.nav_wrapper_ch .nav_container--logo a :active {
   opacity: 0.7;
 }
-.main_nav .menu, .main_nav_ch .menu {
+.nav_wrapper .nav_container--menu,
+.nav_wrapper_ch .nav_container--menu {
   width: 690px;
   list-style-type: none;
   display: -webkit-box;
@@ -333,37 +347,44 @@ p {
   margin-left: 65px;
 }
 @media (min-width: 1880px) {
-  .main_nav .menu, .main_nav_ch .menu {
+  .nav_wrapper .nav_container--menu,
+  .nav_wrapper_ch .nav_container--menu {
     width: 720px;
     margin-left: 155px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .main_nav .menu, .main_nav_ch .menu {
+  .nav_wrapper .nav_container--menu,
+  .nav_wrapper_ch .nav_container--menu {
     display: none;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  .main_nav .menu, .main_nav_ch .menu {
+  .nav_wrapper .nav_container--menu,
+  .nav_wrapper_ch .nav_container--menu {
     display: none;
   }
 }
 @media (min-width: 415px) and (max-width: 766px) {
-  .main_nav .menu, .main_nav_ch .menu {
+  .nav_wrapper .nav_container--menu,
+  .nav_wrapper_ch .nav_container--menu {
     display: none;
   }
 }
 @media (min-width: 400px) and (max-width: 414px) {
-  .main_nav .menu, .main_nav_ch .menu {
+  .nav_wrapper .nav_container--menu,
+  .nav_wrapper_ch .nav_container--menu {
     display: none;
   }
 }
 @media (max-width: 399px) {
-  .main_nav .menu, .main_nav_ch .menu {
+  .nav_wrapper .nav_container--menu,
+  .nav_wrapper_ch .nav_container--menu {
     display: none;
   }
 }
-.main_nav .m_btn, .main_nav_ch .m_btn {
+.nav_wrapper .m_btn,
+.nav_wrapper_ch .m_btn {
   display: inline-block;
   float: left;
   padding: 20px 15px;
@@ -371,11 +392,13 @@ p {
   font-size: 90%;
 }
 @media (min-width: 1880px) {
-  .main_nav .m_btn, .main_nav_ch .m_btn {
+  .nav_wrapper .m_btn,
+  .nav_wrapper_ch .m_btn {
     font-size: 110%;
   }
 }
-.main_nav .m_btn a, .main_nav_ch .m_btn a {
+.nav_wrapper .m_btn a,
+.nav_wrapper_ch .m_btn a {
   letter-spacing: 0px;
   text-decoration: none;
   color: #7B7B7B;
@@ -385,15 +408,18 @@ p {
   -webkit-transition: 0.3s ease;
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
-.main_nav .m_btn a:hover, .main_nav_ch .m_btn a:hover {
+.nav_wrapper .m_btn a:hover,
+.nav_wrapper_ch .m_btn a:hover {
   color: #19D7C7;
   border-bottom: 2px solid;
 }
-.main_nav .m_btn a:active, .main_nav_ch .m_btn a:active {
+.nav_wrapper .m_btn a:active,
+.nav_wrapper_ch .m_btn a:active {
   color: #19D7C7;
   border-bottom: 2px solid;
 }
-.main_nav .nav_contact_container, .main_nav_ch .nav_contact_container {
+.nav_wrapper .nav_contact_container,
+.nav_wrapper_ch .nav_contact_container {
   width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,16 +443,19 @@ p {
   -webkit-flex-wrap: nowrap;
 }
 @media (min-width: 1880px) {
-  .main_nav .nav_contact_container, .main_nav_ch .nav_contact_container {
+  .nav_wrapper .nav_contact_container,
+  .nav_wrapper_ch .nav_contact_container {
     width: 300px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .main_nav .nav_contact_container, .main_nav_ch .nav_contact_container {
+  .nav_wrapper .nav_contact_container,
+  .nav_wrapper_ch .nav_contact_container {
     display: none;
   }
 }
-.main_nav .nav_so_icon, .main_nav_ch .nav_so_icon {
+.nav_wrapper .nav_so_icon,
+.nav_wrapper_ch .nav_so_icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,63 +479,74 @@ p {
   -moz-flex-direction: row;
   -moz-flex-wrap: nowrap;
 }
-.main_nav .mail_icon, .main_nav_ch .mail_icon {
+.nav_wrapper .mail_icon,
+.nav_wrapper_ch .mail_icon {
   width: 30px;
   margin-right: 8px;
 }
 @media (min-width: 1880px) {
-  .main_nav .mail_icon, .main_nav_ch .mail_icon {
+  .nav_wrapper .mail_icon,
+  .nav_wrapper_ch .mail_icon {
     width: 35px;
     margin-right: 15px;
   }
 }
-.main_nav .ig_icon, .main_nav_ch .ig_icon {
+.nav_wrapper .ig_icon,
+.nav_wrapper_ch .ig_icon {
   width: 30px;
   margin-right: 3px;
 }
 @media (min-width: 1880px) {
-  .main_nav .ig_icon, .main_nav_ch .ig_icon {
+  .nav_wrapper .ig_icon,
+  .nav_wrapper_ch .ig_icon {
     width: 35px;
     margin-right: 10px;
   }
 }
-.main_nav .fb_icon, .main_nav_ch .fb_icon {
+.nav_wrapper .fb_icon,
+.nav_wrapper_ch .fb_icon {
   width: 37px;
 }
 @media (min-width: 1880px) {
-  .main_nav .fb_icon, .main_nav_ch .fb_icon {
+  .nav_wrapper .fb_icon,
+  .nav_wrapper_ch .fb_icon {
     width: 42px;
   }
 }
-.main_nav .nav_so_icon img, .main_nav_ch .nav_so_icon img {
+.nav_wrapper .nav_so_icon img,
+.nav_wrapper_ch .nav_so_icon img {
   width: 100%;
 }
-.main_nav .mail_icon,
-.main_nav .ig_icon,
-.main_nav .fb_icon, .main_nav_ch .mail_icon,
-.main_nav_ch .ig_icon,
-.main_nav_ch .fb_icon {
+.nav_wrapper .mail_icon,
+.nav_wrapper .ig_icon,
+.nav_wrapper .fb_icon,
+.nav_wrapper_ch .mail_icon,
+.nav_wrapper_ch .ig_icon,
+.nav_wrapper_ch .fb_icon {
   padding-top: 3px;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
-.main_nav .mail_icon:hover,
-.main_nav .ig_icon:hover,
-.main_nav .fb_icon:hover, .main_nav_ch .mail_icon:hover,
-.main_nav_ch .ig_icon:hover,
-.main_nav_ch .fb_icon:hover {
+.nav_wrapper .mail_icon:hover,
+.nav_wrapper .ig_icon:hover,
+.nav_wrapper .fb_icon:hover,
+.nav_wrapper_ch .mail_icon:hover,
+.nav_wrapper_ch .ig_icon:hover,
+.nav_wrapper_ch .fb_icon:hover {
   opacity: 0.5;
 }
-.main_nav .mail_icon:active,
-.main_nav .ig_icon:active,
-.main_nav .fb_icon:active, .main_nav_ch .mail_icon:active,
-.main_nav_ch .ig_icon:active,
-.main_nav_ch .fb_icon:active {
+.nav_wrapper .mail_icon:active,
+.nav_wrapper .ig_icon:active,
+.nav_wrapper .fb_icon:active,
+.nav_wrapper_ch .mail_icon:active,
+.nav_wrapper_ch .ig_icon:active,
+.nav_wrapper_ch .fb_icon:active {
   opacity: 0.5;
 }
-.main_nav .nav_contact, .main_nav_ch .nav_contact {
+.nav_wrapper .nav_contact,
+.nav_wrapper_ch .nav_contact {
   text-decoration: none;
   padding: 10px 25px;
   font-size: 80%;
@@ -522,7 +562,8 @@ p {
   -webkit-transition: 0.3s ease;
 }
 @media (min-width: 1880px) {
-  .main_nav .nav_contact, .main_nav_ch .nav_contact {
+  .nav_wrapper .nav_contact,
+  .nav_wrapper_ch .nav_contact {
     width: 130px;
     height: 38px;
     text-align: center;
@@ -532,44 +573,53 @@ p {
   }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .main_nav .nav_contact, .main_nav_ch .nav_contact {
+  .nav_wrapper .nav_contact,
+  .nav_wrapper_ch .nav_contact {
     display: none;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  .main_nav .nav_contact, .main_nav_ch .nav_contact {
+  .nav_wrapper .nav_contact,
+  .nav_wrapper_ch .nav_contact {
     display: none;
   }
 }
 @media (min-width: 415px) and (max-width: 766px) {
-  .main_nav .nav_contact, .main_nav_ch .nav_contact {
+  .nav_wrapper .nav_contact,
+  .nav_wrapper_ch .nav_contact {
     display: none;
   }
 }
 @media (min-width: 400px) and (max-width: 414px) {
-  .main_nav .nav_contact, .main_nav_ch .nav_contact {
+  .nav_wrapper .nav_contact,
+  .nav_wrapper_ch .nav_contact {
     display: none;
   }
 }
 @media (max-width: 399px) {
-  .main_nav .nav_contact, .main_nav_ch .nav_contact {
+  .nav_wrapper .nav_contact,
+  .nav_wrapper_ch .nav_contact {
     display: none;
   }
 }
-.main_nav .nav_contact_ch, .main_nav_ch .nav_contact_ch {
+.nav_wrapper .nav_contact_ch,
+.nav_wrapper_ch .nav_contact_ch {
   font-family: "F_LIGHT_CH";
 }
-.main_nav .nav_contact:hover, .main_nav_ch .nav_contact:hover {
+.nav_wrapper .nav_contact:hover,
+.nav_wrapper_ch .nav_contact:hover {
   color: black;
   border: 1px solid black;
   background-color: #ffffff;
 }
-.main_nav .nav_contact:active, .main_nav_ch .nav_contact:active {
+.nav_wrapper .nav_contact:active,
+.nav_wrapper_ch .nav_contact:active {
   color: black;
   border: 1px solid black;
   background-color: #ffffff;
 }
-.main_nav .menu_trigger, .main_nav_ch .menu_trigger {
+.nav_wrapper .menu_trigger,
+.nav_wrapper_ch .menu_trigger {
   display: none;
   font-size: 30px;
   cursor: pointer;
@@ -581,18 +631,21 @@ p {
   top: 12px;
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .main_nav .menu_trigger, .main_nav_ch .menu_trigger {
+  .nav_wrapper .menu_trigger,
+  .nav_wrapper_ch .menu_trigger {
     display: inline-block;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  .main_nav .menu_trigger, .main_nav_ch .menu_trigger {
+  .nav_wrapper .menu_trigger,
+  .nav_wrapper_ch .menu_trigger {
     right: 30px;
     display: inline-block;
   }
 }
 @media (min-width: 415px) and (max-width: 766px) {
-  .main_nav .menu_trigger, .main_nav_ch .menu_trigger {
+  .nav_wrapper .menu_trigger,
+  .nav_wrapper_ch .menu_trigger {
     display: inline-block;
     right: 20px;
     height: 30px;
@@ -600,23 +653,26 @@ p {
   }
 }
 @media (min-width: 400px) and (max-width: 414px) {
-  .main_nav .menu_trigger, .main_nav_ch .menu_trigger {
+  .nav_wrapper .menu_trigger,
+  .nav_wrapper_ch .menu_trigger {
     display: inline-block;
     right: 20px;
   }
 }
 @media (max-width: 399px) {
-  .main_nav .menu_trigger, .main_nav_ch .menu_trigger {
+  .nav_wrapper .menu_trigger,
+  .nav_wrapper_ch .menu_trigger {
     display: inline-block;
     right: 20px;
   }
 }
-.main_nav .menu_trigger img, .main_nav_ch .menu_trigger img {
+.nav_wrapper .menu_trigger img,
+.nav_wrapper_ch .menu_trigger img {
   width: 100%;
 }
 
 /* chinese ver */
-.main_nav_ch {
+.nav_wrapper_ch {
   font-family: "F_LIGHT_CH";
 }
 
@@ -776,9 +832,6 @@ p {
 }
 .overlay .overlay_content .phone_menu .phone_en_btn {
   margin-right: 20px;
-}
-.overlay .overlay_content .phone_menu_ch a {
-  font-family: "F_LIGHT_CH";
 }
 .overlay .overlay_content .phone_hr {
   width: 152px;
@@ -955,7 +1008,7 @@ p {
 }
 
 header {
-  background-image: url("../img/help_body.png");
+  background-image: url("../img/help_body.jpg");
   background-color: grey;
   background-repeat: no-repeat;
   background-position: center center;
