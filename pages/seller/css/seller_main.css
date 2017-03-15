@@ -56,7 +56,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*media queries*/
-/*color*/
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
 @font-face {
   font-family: "F_LIGHT";
   src: url('../../../fonts/MuseoSans_300.svg') format('svg'), url('../../../fonts/MuseoSans_300.ttf') format('truetype'), url('../../../fonts/MuseoSans_300.woff') format('woff'), url('../../../fonts/MuseoSans_300.woff2') format('woff2'), url('../../../fonts/MuseoSans_300.eot') format('embedded-opentype');
@@ -73,11 +78,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "F_REGULAR_CH";
   src: url('../../../fonts/NotoSansCJKtc-Medium.otf') format('opentype');
 }
-* {
-  box-sizing: border-box;
-}
-
-/* mixin flex*/
 /* mixin end */
 body,
 html {
@@ -92,7 +92,7 @@ a {
 
 h3 {
   font-size: 200%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 2px;
 }
 @media (min-width: 1880px) {
@@ -132,7 +132,7 @@ h3 {
 
 p {
   font-size: 110%;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 5px;
 }
 @media (min-width: 1880px) {
@@ -2312,7 +2312,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
@@ -2464,6 +2464,7 @@ header {
 }
 
 .slo-down {
+  font-family: "F_LIGHT","F_LIGHT_CH","蘋果儷中黑","微軟正黑體";
   font-size: 120%;
   margin-top: 30px;
   letter-spacing: 3px;
@@ -2824,7 +2825,7 @@ header {
   margin-bottom: 30px;
   font-size: 100%;
   letter-spacing: 2px;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   .jo-t01 {
@@ -2924,7 +2925,7 @@ header {
   margin-bottom: 30px;
   font-size: 60%;
   letter-spacing: 1px;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   .jo-t02 {
@@ -3018,7 +3019,7 @@ header {
   margin-bottom: 15px;
   font-size: 80%;
   letter-spacing: 4px;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 @media (max-width: 399px) {
   .jo-t03 {
@@ -3045,7 +3046,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
@@ -3130,7 +3131,7 @@ input[type=email] {
   font-size: 50%;
   text-align: center;
   letter-spacing: 2px;
-  font-family: "F_LIGHT", "F_LIGHT_CH";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
   -moz-transition: 0.3s linear;

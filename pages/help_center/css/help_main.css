@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -114,7 +115,7 @@ a {
 
 h3 {
   font-size: 200%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 2px;
 }
 @media (min-width: 1880px) {
@@ -154,7 +155,7 @@ h3 {
 
 p {
   font-size: 110%;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 5px;
 }
 @media (min-width: 1880px) {
@@ -192,7 +193,7 @@ p {
 }
 
 .p_en_seller {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 1px;
 }
 @media (min-width: 1880px) {
@@ -239,7 +240,7 @@ p {
   overflow: hidden;
   top: 0;
   z-index: 50;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   /*menu*/
   /* contact btn */
   /* contact btn */
@@ -776,7 +777,7 @@ p {
   }
 }
 .overlay .overlay_content .phone_menu .phone_btn a {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   padding: 20px 0;
   text-decoration: none;
   font-size: 110%;
@@ -1649,7 +1650,7 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 /* main font */
 /* --- Header Search --- */
 .header_search_title {
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 250%;
   color: white;
   text-shadow: 1px 1px 10px rgba(105, 105, 105, 0.6);
@@ -1666,7 +1667,7 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 }
 
 .header_searchform input[type=search] {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 110%;
   color: #19D7C7;
 }
@@ -1713,7 +1714,7 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 }
 
 .header_searchform input[type=submit] {
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 80%;
   color: white;
   letter-spacing: 1.5px;
@@ -1732,7 +1733,7 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 /* --- Content Section --- */
 /* BIG TITLE */
 .bigtitle {
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 250%;
   letter-spacing: 1px;
   color: black;
@@ -1752,7 +1753,7 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 
 /* Q&A CONTENT */
 .question_title {
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 130%;
   text-align: center;
   color: #7B7B7B;
@@ -1760,7 +1761,7 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 }
 
 .question_content {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   text-align: center;
   color: #AAAAAA;
   letter-spacing: 0.5px;
@@ -1814,11 +1815,11 @@ footer .wrapper_foo .fo_right .fo_social .so_icon .fb_a a:hover {
 }
 
 .question {
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 
 .answer {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   line-height: 25px;
 }
 

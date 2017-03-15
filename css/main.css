@@ -1154,7 +1154,7 @@ p {
 }
 .h_container .h_notes,
 .h_container .h_notes_ch {
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 120%;
   letter-spacing: 2px;
   color: white;
