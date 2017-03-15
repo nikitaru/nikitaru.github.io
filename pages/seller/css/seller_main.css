@@ -217,7 +217,7 @@ p {
   overflow: hidden;
   top: 0;
   z-index: 50;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   /*menu*/
   /* contact btn */
   /* contact btn */
@@ -754,7 +754,7 @@ p {
   }
 }
 .overlay .overlay_content .phone_menu .phone_btn a {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   padding: 20px 0;
   text-decoration: none;
   font-size: 110%;
@@ -1084,7 +1084,7 @@ header {
 .h-t01 {
   height: 100px;
   font-size: 530%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   line-height: 100px;
   text-align: right;
   padding-right: 10px;
@@ -1128,7 +1128,7 @@ header {
 .h-t02 {
   height: 100px;
   font-size: 530%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   line-height: 100px;
   text-align: left;
   padding-left: 10px;
@@ -1170,6 +1170,7 @@ header {
 }
 
 .h-t01_ch, .h-t02_ch {
+  font-size: 450%;
   font-family: "F_REGULAR","F_REGULAR_CH";
 }
 
@@ -1191,7 +1192,7 @@ header {
   height: 50px;
   line-height: 50px;
   font-size: 195%;
-  font-family: "F_LIGHT", "F_LIGHT_CH";
+  font-family: "F_LIGHT", "F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   color: white;
   padding: 0 100px;
   letter-spacing: 1px;
@@ -1360,13 +1361,13 @@ header {
 
 /* join btn englisg */
 .join-btn-en {
-  font-family: "F_REGULAR";
-  letter-spacing: 3px;
+  font-family: "F_REGULAR","Arial";
+  letter-spacing: 2px;
 }
 
 .join-btn-en a {
-  font-family: "F_REGULAR";
-  letter-spacing: 3px;
+  font-family: "F_REGULAR","Arial";
+  letter-spacing: 2px;
 }
 
 /* english version */
