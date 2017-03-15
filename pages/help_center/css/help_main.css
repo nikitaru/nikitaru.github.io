@@ -56,7 +56,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*media queries*/
-/*color*/
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
 @font-face {
   font-family: "F_LIGHT";
   src: url('../../../fonts/MuseoSans_300.svg') format('svg'), url('../../../fonts/MuseoSans_300.ttf') format('truetype'), url('../../../fonts/MuseoSans_300.woff') format('woff'), url('../../../fonts/MuseoSans_300.woff2') format('woff2'), url('../../../fonts/MuseoSans_300.eot') format('embedded-opentype');
@@ -73,10 +78,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "F_REGULAR_CH";
   src: url('../../../fonts/NotoSansCJKtc-Medium.otf') format('opentype');
 }
-* {
-  box-sizing: border-box;
-}
-
 /* flex */
 .question {
   display: -webkit-box;
@@ -115,7 +116,7 @@ a {
 
 h3 {
   font-size: 200%;
-  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
+  font-family: "F_REGULAR", "F_REGULAR_CH", "Arial", "蘋果儷中黑", "微軟正黑體";
   letter-spacing: 2px;
 }
 @media (min-width: 1880px) {
@@ -155,7 +156,7 @@ h3 {
 
 p {
   font-size: 110%;
-  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
+  font-family: "F_LIGHT", "F_LIGHT_CH", "Arial", "蘋果儷中黑", "微軟正黑體";
   letter-spacing: 5px;
 }
 @media (min-width: 1880px) {
@@ -193,7 +194,7 @@ p {
 }
 
 .p_en_seller {
-  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
+  font-family: "F_LIGHT", "F_LIGHT_CH", "Arial", "蘋果儷中黑", "微軟正黑體";
   letter-spacing: 1px;
 }
 @media (min-width: 1880px) {
