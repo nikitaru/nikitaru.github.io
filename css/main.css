@@ -105,7 +105,7 @@ a {
 
 h1 {
   font-size: 330%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 2px;
 }
 @media (min-width: 415px) and (max-width: 766px) {
@@ -131,13 +131,13 @@ h1 {
 
 h2 {
   font-size: 250%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 3px;
 }
 
 h3 {
   font-size: 200%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 1px;
 }
 @media (min-width: 1880px) {
@@ -189,7 +189,7 @@ h3 {
 
 h4 {
   font-size: 190%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 @media (min-width: 1880px) {
   h4 {
@@ -205,7 +205,7 @@ h4 {
 
 p {
   font-size: 100%;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 1px;
   line-height: 30px;
 }
@@ -279,7 +279,7 @@ p {
   overflow: hidden;
   top: 0;
   z-index: 50;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   /*menu*/
   /* contact btn */
   /* contact btn */
@@ -816,7 +816,7 @@ p {
   }
 }
 .overlay .overlay_content .phone_menu .phone_btn a {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   padding: 20px 0;
   text-decoration: none;
   font-size: 110%;
@@ -1730,7 +1730,7 @@ p {
   height: 320px;
   border: 0.1px #E0E0E0 solid;
   box-shadow: 1px 1px 5px #E0E0E0;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 @media (min-width: 1880px) {
   .wrapper_describe .describe_box,
@@ -1813,7 +1813,7 @@ p {
   text-align: left;
   line-height: 30px;
   color: #8E8E8E;
-  font-size: 80%;
+  font-size: 90%;
   letter-spacing: 0.5px;
 }
 @media (min-width: 1880px) {
@@ -2606,13 +2606,13 @@ p {
 }
 .intro_text_box .introbox_set .m_intro_title {
   color: #19D7C7;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_RLIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 100%;
   margin-bottom: 4px;
 }
 .intro_text_box .introbox_set .m_intro_content {
   color: #737373;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 80%;
   line-height: 16px;
 }
@@ -2705,7 +2705,7 @@ p {
 
 /*download title*/
 .download_title {
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   color: white;
   text-align: center;
   margin: 50px 0 30px 0;
@@ -2725,7 +2725,7 @@ p {
 
 .download_content {
   font-size: 120%;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
   color: white;
   letter-spacing: 0.8px;
   text-align: center;
