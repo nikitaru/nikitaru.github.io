@@ -58,6 +58,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*media queries*/
 * {
   box-sizing: border-box;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 @font-face {
