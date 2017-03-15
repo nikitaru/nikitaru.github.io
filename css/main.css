@@ -1730,7 +1730,7 @@ p {
   height: 320px;
   border: 0.1px #E0E0E0 solid;
   box-shadow: 1px 1px 5px #E0E0E0;
-  font-family: "F_LIGHT","F_LIGHT_CH","Arial","蘋果儷中黑","微軟正黑體";
+  font-family: "F_LIGHT","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
 }
 @media (min-width: 1880px) {
   .wrapper_describe .describe_box,
@@ -1898,7 +1898,6 @@ p {
 }
 .wrapper_describe .describe_box_ch {
   height: 270px;
-  font-family: "F_LIGHT_CH";
 }
 
 /*// mobile icon section // */
@@ -1987,7 +1986,7 @@ p {
   text-align: center;
   line-height: 60px;
   color: white;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 95%;
 }
 
@@ -2003,7 +2002,7 @@ p {
   text-align: left;
   line-height: 30px;
   color: #8E8E8E;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 80%;
   letter-spacing: 0.5px;
 }
@@ -2285,7 +2284,7 @@ p {
 .intro_title {
   width: 100%;
   text-align: center;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   color: #19D7C7;
   font-size: 140%;
   padding: 0px 40px 0 40px;
@@ -2293,7 +2292,7 @@ p {
 
 .intro_content {
   padding: 20px 40px 0 40px;
-  font-family: "F_LIGHT";
+  font-family: "F_LIGHT","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 95%;
   line-height: 25px;
   letter-spacing: 0.5px;
@@ -2331,7 +2330,7 @@ p {
   height: 50px;
   color: #8E8E8E;
   font-size: 230%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 0.5px;
   margin-bottom: 10px;
   text-align: left;
@@ -2379,7 +2378,7 @@ p {
   color: #ADADAD;
   width: 100%;
   font-size: 130%;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","Arial","蘋果儷中黑","微軟正黑體";
   letter-spacing: 0.5px;
   padding-left: 3px;
   margin-bottom: 25px;
