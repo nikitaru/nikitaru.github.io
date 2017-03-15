@@ -1303,7 +1303,7 @@ p {
   color: white;
   border: white 2px solid;
   text-decoration: none;
-  font-family: "F_REGULAR";
+  font-family: "F_REGULAR","F_REGULAR_CH","Arial","蘋果儷中黑","微軟正黑體";
   font-size: 80%;
   border-radius: 50px;
   background-color: #19D7C7;
